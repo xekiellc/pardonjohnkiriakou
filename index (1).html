@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pardon John Kiriakou — He Told the Truth. They Put Him in Prison.</title>
+  <meta name="description" content="John Kiriakou exposed the CIA's torture program and was prosecuted for it. The torturers went free. It's time for a presidential pardon." />
+  <meta property="og:title" content="Pardon John Kiriakou" />
+  <meta property="og:description" content="He told the truth about torture. They put him in prison. Sign the petition for a presidential pardon." />
+  <meta property="og:url" content="https://pardonjohnkiriakou.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #1a1008;
+      --paper: #f2ead8;
+      --paper-dark: #e8dcc4;
+      --red: #8b0000;
+      --red-bright: #b30000;
+      --gray: #5a5040;
+      --gray-light: #9a9080;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: 'Libre Baskerville', serif;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* ── MASTHEAD ── */
+    .masthead {
+      background: var(--paper);
+      border-bottom: 3px double var(--ink);
+      text-align: center;
+    }
+
+    .masthead-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.6rem 2rem;
+      border-bottom: 1px solid var(--ink);
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gray);
+    }
+
+    .masthead-date { font-style: italic; font-family: 'Libre Baskerville', serif; font-size: 0.75rem; }
+
+    .masthead-title {
+      padding: 1.5rem 2rem 1rem;
+      border-bottom: 1px solid var(--ink);
+    }
+
+    .masthead-eyebrow {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--gray);
+      margin-bottom: 0.5rem;
+    }
+
+    .masthead-name {
+      font-family: 'UnifrakturMaguntia', cursive;
+      font-size: clamp(3rem, 8vw, 6rem);
+      line-height: 1;
+      color: var(--ink);
+    }
+
+    .masthead-sub {
+      font-family: 'Libre Baskerville', serif;
+      font-size: 0.85rem;
+      font-style: italic;
+      color: var(--gray);
+      margin-top: 0.5rem;
+    }
+
+    /* ── NAV ── */
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      border-bottom: 3px double var(--ink);
+      background: var(--paper);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--ink);
+      text-decoration: none;
+      padding: 0.7rem 1.4rem;
+      border-right: 1px solid rgba(26,16,8,0.2);
+      transition: background 0.15s, color 0.15s;
+    }
+
+    nav a:first-child { border-left: 1px solid rgba(26,16,8,0.2); }
+    nav a:hover { background: var(--ink); color: var(--paper); }
+
+    /* ── HERO ── */
+    #hero {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 3rem 2rem 2rem;
+      display: grid;
+      grid-template-columns: 1fr 320px;
+      gap: 3rem;
+      border-bottom: 1px solid var(--ink);
+    }
+
+    .hero-kicker {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--red);
+      border-top: 3px solid var(--red);
+      padding-top: 0.5rem;
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+
+    h1 {
+      font-family: 'Libre Baskerville', serif;
+      font-weight: 700;
+      font-size: clamp(2.2rem, 4.5vw, 3.6rem);
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      margin-bottom: 1rem;
+    }
+
+    .hero-deck {
+      font-size: 1.1rem;
+      font-style: italic;
+      color: var(--gray);
+      border-top: 1px solid var(--ink);
+      border-bottom: 1px solid var(--ink);
+      padding: 0.7rem 0;
+      margin-bottom: 1.5rem;
+      line-height: 1.5;
+    }
+
+    .hero-body p {
+      font-size: 1rem;
+      line-height: 1.85;
+      margin-bottom: 1rem;
+      color: #2a1e10;
+    }
+
+    .hero-body p:first-child::first-letter {
+      font-family: 'UnifrakturMaguntia', cursive;
+      font-size: 4.5rem;
+      float: left;
+      line-height: 0.75;
+      margin-right: 0.12em;
+      color: var(--ink);
+    }
+
+    .hero-cta-bar {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--ink);
+    }
+
+    .btn-stamp {
+      display: inline-block;
+      background: var(--red);
+      color: var(--paper);
+      font-family: 'Oswald', sans-serif;
+      font-weight: 600;
+      font-size: 0.85rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      padding: 0.75rem 2rem;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .btn-stamp:hover { background: #5a0000; }
+
+    .btn-ghost {
+      display: inline-block;
+      background: transparent;
+      color: var(--ink);
+      font-family: 'Oswald', sans-serif;
+      font-weight: 500;
+      font-size: 0.85rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      padding: 0.75rem 2rem;
+      text-decoration: none;
+      border: 1px solid var(--ink);
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .btn-ghost:hover { background: var(--ink); color: var(--paper); }
+
+    /* ── SIDEBAR ── */
+    .hero-sidebar {
+      border-left: 1px solid var(--ink);
+      padding-left: 2rem;
+    }
+
+    .sidebar-block {
+      margin-bottom: 2rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid rgba(26,16,8,0.2);
+    }
+
+    .sidebar-block:last-child { border-bottom: none; }
+
+    .sidebar-label {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--red);
+      border-top: 2px solid var(--red);
+      padding-top: 0.4rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .stat-row {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .stat-item { flex: 1; text-align: center; padding: 0.8rem 0.5rem; background: var(--paper-dark); }
+
+    .stat-num {
+      font-family: 'Oswald', sans-serif;
+      font-weight: 700;
+      font-size: 2rem;
+      line-height: 1;
+      color: var(--ink);
+    }
+
+    .stat-txt {
+      font-size: 0.68rem;
+      font-style: italic;
+      color: var(--gray);
+      line-height: 1.3;
+      margin-top: 0.2rem;
+    }
+
+    .follow-links { display: flex; flex-direction: column; gap: 0; }
+
+    .follow-link {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--ink);
+      text-decoration: none;
+      padding: 0.5rem 0;
+      border-bottom: 1px dotted rgba(26,16,8,0.3);
+      transition: color 0.15s;
+    }
+
+    .follow-link:hover { color: var(--red); }
+    .follow-link::after { content: '→'; }
+
+    /* ── SECTION SHARED ── */
+    .section-wrap {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 3rem 2rem;
+      border-bottom: 1px solid var(--ink);
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 3rem;
+      position: relative;
+    }
+
+    .section-header::before,
+    .section-header::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      width: calc(50% - 140px);
+      height: 1px;
+      background: var(--ink);
+    }
+
+    .section-header::before { left: 0; }
+    .section-header::after { right: 0; }
+
+    .section-header h2 {
+      font-family: 'Oswald', sans-serif;
+      font-weight: 700;
+      font-size: 0.8rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      display: inline-block;
+      background: var(--paper);
+      padding: 0 1rem;
+      position: relative;
+    }
+
+    /* ── TIMELINE ── */
+    .timeline-grid {
+      display: grid;
+      grid-template-columns: 90px 1fr;
+    }
+
+    .tl-year {
+      font-family: 'Oswald', sans-serif;
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: var(--gray-light);
+      padding: 0 1.5rem 2.5rem 0;
+      text-align: right;
+      border-right: 2px solid var(--ink);
+      position: relative;
+    }
+
+    .tl-year::after {
+      content: '';
+      position: absolute;
+      right: -6px;
+      top: 6px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--paper);
+      border: 2px solid var(--ink);
+    }
+
+    .tl-year.injustice { color: var(--red); }
+    .tl-year.injustice::after { background: var(--red); border-color: var(--red); }
+    .tl-year.now::after { background: var(--ink); }
+
+    .tl-content { padding: 0 0 2.5rem 2rem; }
+
+    .tl-tag {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.62rem;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      padding: 0.15rem 0.5rem;
+      margin-bottom: 0.4rem;
+      display: inline-block;
+    }
+
+    .tl-tag.service { background: var(--paper-dark); color: var(--gray); }
+    .tl-tag.milestone { background: #f0e8cc; color: #5a4010; border: 1px solid #c0a840; }
+    .tl-tag.injustice { background: #f8e8e8; color: var(--red); border: 1px solid var(--red); }
+    .tl-tag.now { background: var(--ink); color: var(--paper); }
+
+    .tl-content h3 {
+      font-family: 'Libre Baskerville', serif;
+      font-weight: 700;
+      font-size: 1rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .tl-content p { font-size: 0.9rem; color: var(--gray); line-height: 1.6; }
+
+    /* ── PETITION ── */
+    #petition { background: var(--ink); }
+
+    #petition .section-wrap { border-bottom-color: rgba(242,234,216,0.15); }
+
+    #petition .section-header h2 { background: var(--ink); color: var(--paper); }
+    #petition .section-header::before,
+    #petition .section-header::after { background: rgba(242,234,216,0.25); }
+
+    .petition-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: start;
+    }
+
+    .petition-statement h3 {
+      font-family: 'Libre Baskerville', serif;
+      font-weight: 700;
+      font-style: italic;
+      font-size: 1.7rem;
+      line-height: 1.3;
+      color: var(--paper);
+      margin-bottom: 1.5rem;
+    }
+
+    .petition-statement p {
+      font-size: 0.95rem;
+      color: rgba(242,234,216,0.65);
+      line-height: 1.8;
+      margin-bottom: 1rem;
+    }
+
+    .petition-count-display {
+      margin-top: 2rem;
+      padding: 1.5rem;
+      border: 1px solid rgba(242,234,216,0.2);
+      text-align: center;
+    }
+
+    .petition-count-display .big-num {
+      font-family: 'Oswald', sans-serif;
+      font-weight: 700;
+      font-size: 3rem;
+      color: var(--paper);
+    }
+
+    .petition-count-display p {
+      font-size: 0.8rem;
+      font-style: italic;
+      color: rgba(242,234,216,0.4);
+      margin: 0;
+    }
+
+    .form-group { margin-bottom: 1rem; }
+
+    .form-group label {
+      display: block;
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: rgba(242,234,216,0.55);
+      margin-bottom: 0.3rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      background: rgba(242,234,216,0.05);
+      border: 1px solid rgba(242,234,216,0.2);
+      color: var(--paper);
+      font-family: 'Libre Baskerville', serif;
+      font-size: 0.95rem;
+      padding: 0.7rem 1rem;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .form-group input::placeholder,
+    .form-group textarea::placeholder { color: rgba(242,234,216,0.2); }
+
+    .form-group input:focus,
+    .form-group textarea:focus { border-color: rgba(242,234,216,0.5); }
+
+    .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .form-group textarea { resize: vertical; min-height: 80px; }
+
+    #petition .btn-stamp {
+      width: 100%;
+      text-align: center;
+      padding: 1rem;
+      background: var(--paper);
+      color: var(--ink);
+      margin-top: 0.5rem;
+    }
+
+    #petition .btn-stamp:hover { background: var(--paper-dark); }
+
+    .form-message {
+      display: none;
+      padding: 0.8rem 1rem;
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.85rem;
+      margin-top: 0.8rem;
+    }
+
+    .form-message.success { background: rgba(100,180,100,0.12); color: #8dcc8d; border-left: 3px solid #8dcc8d; }
+    .form-message.error { background: rgba(180,60,60,0.12); color: #e08080; border-left: 3px solid #e08080; }
+
+    /* ── REP ── */
+    #rep { background: var(--paper-dark); }
+
+    .rep-intro-text {
+      font-style: italic;
+      color: var(--gray);
+      max-width: 580px;
+      margin: 0 auto 2rem;
+      text-align: center;
+    }
+
+    .rep-form {
+      display: flex;
+      max-width: 460px;
+      margin: 0 auto 2rem;
+    }
+
+    .rep-form input {
+      flex: 1;
+      background: var(--paper);
+      border: 1px solid var(--ink);
+      border-right: none;
+      color: var(--ink);
+      font-family: 'Libre Baskerville', serif;
+      font-size: 1rem;
+      padding: 0.8rem 1rem;
+      outline: none;
+    }
+
+    .rep-form input::placeholder { color: var(--gray-light); font-style: italic; }
+
+    #rep-results { display: none; max-width: 800px; margin: 0 auto; }
+
+    #rep-results h3 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--gray);
+      border-top: 2px solid var(--red);
+      padding-top: 0.5rem;
+      margin-bottom: 1.5rem;
+      display: inline-block;
+    }
+
+    .rep-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1.5rem; }
+
+    .rep-card { background: var(--paper); border: 1px solid rgba(26,16,8,0.15); padding: 1.5rem; }
+
+    .rep-card .rep-name { font-family: 'Libre Baskerville', serif; font-weight: 700; font-size: 1rem; margin-bottom: 0.2rem; }
+
+    .rep-card .rep-title {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gray);
+      margin-bottom: 1rem;
+    }
+
+    .rep-card a {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      background: var(--red);
+      color: var(--paper);
+      padding: 0.4rem 1rem;
+      text-decoration: none;
+      display: inline-block;
+      transition: background 0.2s;
+    }
+
+    .rep-card a:hover { background: #5a0000; }
+
+    /* ── BOOKS ── */
+    .books-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+      border-top: 1px solid rgba(26,16,8,0.15);
+      border-left: 1px solid rgba(26,16,8,0.15);
+    }
+
+    .book-card {
+      padding: 1.5rem;
+      border-right: 1px solid rgba(26,16,8,0.15);
+      border-bottom: 1px solid rgba(26,16,8,0.15);
+    }
+
+    .book-year {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.62rem;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-bottom: 0.5rem;
+      border-top: 2px solid var(--red);
+      padding-top: 0.4rem;
+      display: inline-block;
+    }
+
+    .book-card h3 {
+      font-family: 'Libre Baskerville', serif;
+      font-weight: 700;
+      font-style: italic;
+      font-size: 0.92rem;
+      line-height: 1.4;
+      margin-bottom: 0.6rem;
+    }
+
+    .book-card p { font-size: 0.82rem; color: var(--gray); line-height: 1.5; margin-bottom: 1rem; }
+
+    .book-card a {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--red);
+      text-decoration: none;
+    }
+
+    .book-card a:hover { text-decoration: underline; }
+
+    /* ── MEDIA ── */
+    #media { background: var(--paper-dark); }
+
+    .media-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.5rem; }
+
+    .media-card {
+      background: var(--paper);
+      border-top: 3px solid var(--ink);
+      padding: 1.5rem;
+    }
+
+    .media-type {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.62rem;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gray-light);
+      margin-bottom: 0.5rem;
+    }
+
+    .media-card h3 { font-family: 'Libre Baskerville', serif; font-weight: 700; font-size: 0.95rem; margin-bottom: 0.5rem; }
+    .media-card p { font-size: 0.85rem; color: var(--gray); line-height: 1.5; margin-bottom: 1rem; }
+    .media-card a { font-family: 'Oswald', sans-serif; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--red); text-decoration: none; }
+    .media-card a:hover { text-decoration: underline; }
+
+    /* ── NEWS ── */
+    .news-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 2rem; }
+
+    .news-card { border-top: 1px solid var(--ink); padding-top: 1rem; }
+
+    .news-source {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.62rem;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-bottom: 0.4rem;
+    }
+
+    .news-card h3 { font-family: 'Libre Baskerville', serif; font-weight: 700; font-size: 0.92rem; line-height: 1.4; margin-bottom: 0.4rem; }
+    .news-card h3 a { color: var(--ink); text-decoration: none; }
+    .news-card h3 a:hover { color: var(--red); }
+    .news-date { font-size: 0.78rem; font-style: italic; color: var(--gray-light); }
+    .news-loading { font-style: italic; color: var(--gray-light); }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--ink);
+      border-top: 3px double var(--paper);
+      padding: 2.5rem 2rem;
+      text-align: center;
+    }
+
+    .footer-name { font-family: 'UnifrakturMaguntia', cursive; font-size: 2.2rem; color: var(--paper); margin-bottom: 1.5rem; }
+
+    .footer-links { display: flex; justify-content: center; flex-wrap: wrap; gap: 0.5rem 2rem; margin-bottom: 1.5rem; }
+
+    .footer-links a {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: rgba(242,234,216,0.45);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover { color: var(--paper); }
+
+    .footer-rule { width: 60px; height: 1px; background: rgba(242,234,216,0.2); margin: 0 auto 1.5rem; }
+
+    .footer-copy { font-size: 0.78rem; font-style: italic; color: rgba(242,234,216,0.3); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 820px) {
+      #hero { grid-template-columns: 1fr; }
+      .hero-sidebar { border-left: none; padding-left: 0; border-top: 1px solid var(--ink); padding-top: 2rem; }
+      .petition-layout { grid-template-columns: 1fr; }
+      .form-grid { grid-template-columns: 1fr; }
+      .section-header::before, .section-header::after { display: none; }
+      nav a { font-size: 0.65rem; padding: 0.6rem 0.8rem; }
+      .rep-form { flex-direction: column; }
+      .rep-form input { border-right: 1px solid var(--ink); border-bottom: none; }
+      .masthead-top { flex-direction: column; gap: 0.3rem; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- MASTHEAD -->
+<header class="masthead">
+  <div class="masthead-top">
+    <span class="masthead-date">Saturday, May 2, 2026</span>
+    <span>An Independent Advocacy Campaign</span>
+    <span>pardonjohnkiriakou.com</span>
+  </div>
+  <div class="masthead-title">
+    <p class="masthead-eyebrow">Campaign for Justice</p>
+    <div class="masthead-name">Pardon John Kiriakou</div>
+    <p class="masthead-sub">"He told the truth. They put him in prison. The torturers went free."</p>
+  </div>
+  <nav>
+    <a href="#case">The Case</a>
+    <a href="#timeline">Timeline</a>
+    <a href="#petition">Sign</a>
+    <a href="#rep">Contact Rep</a>
+    <a href="#books">Books</a>
+    <a href="#media">Media</a>
+    <a href="#news">News</a>
+  </nav>
+</header>
+
+<!-- HERO / CASE -->
+<div id="hero">
+  <div id="case">
+    <span class="hero-kicker">The Case for a Pardon</span>
+    <h1>He Exposed CIA Torture. They Prosecuted Him. The Torturers Went Free.</h1>
+    <p class="hero-deck">John Kiriakou was the first U.S. government official to publicly confirm that the CIA waterboarded prisoners. For that, he served 23 months in federal prison. Not one torturer was ever charged.</p>
+    <div class="hero-body">
+      <p>John Kiriakou spent nearly two decades serving his country. He was a CIA officer, a counterterrorism specialist who led the raid that captured Abu Zubaydah. He was trusted, decorated, and committed to his work — until the day he decided that some things mattered more than silence.</p>
+      <p>In December 2007, Kiriakou sat down with ABC News journalist Brian Ross and told the truth: the CIA was waterboarding prisoners. He became the first government official to say so publicly. He called it torture. He said it was wrong. He said it anyway.</p>
+      <p>The Obama administration responded with the Espionage Act. Kiriakou was charged, tried, and sentenced to 30 months in federal prison at Loretto, Pennsylvania. He served 23 of them.</p>
+      <p>Meanwhile, the architects of the torture program — the lawyers who authorized it, the officers who carried it out, the officials who covered it up — faced no consequences. Some were promoted. A presidential pardon would not undo the injustice. But it would say, on the record, that telling the truth is not a crime.</p>
+    </div>
+    <div class="hero-cta-bar">
+      <a href="#petition" class="btn-stamp">Sign the Petition</a>
+      <a href="#timeline" class="btn-ghost">Read the Full Story</a>
+    </div>
+  </div>
+
+  <div class="hero-sidebar">
+    <div class="sidebar-block">
+      <div class="sidebar-label">By the Numbers</div>
+      <div class="stat-row">
+        <div class="stat-item"><div class="stat-num">23</div><div class="stat-txt">months in federal prison</div></div>
+        <div class="stat-item"><div class="stat-num">0</div><div class="stat-txt">torturers ever prosecuted</div></div>
+      </div>
+      <div class="stat-row">
+        <div class="stat-item"><div class="stat-num">1st</div><div class="stat-txt">U.S. official to confirm waterboarding</div></div>
+        <div class="stat-item"><div class="stat-num">#5</div><div class="stat-txt">NYT Bestseller</div></div>
+      </div>
+    </div>
+
+    <div class="sidebar-block">
+      <div class="sidebar-label">Follow John Kiriakou</div>
+      <div class="follow-links">
+        <a href="https://x.com/JohnKiriakou" target="_blank" rel="noopener" class="follow-link">X / Twitter @JohnKiriakou</a>
+        <a href="https://www.instagram.com/realjohnkiriakou/" target="_blank" rel="noopener" class="follow-link">Instagram @realjohnkiriakou</a>
+        <a href="https://www.youtube.com/@DeepFocuswithJohnKiriakou" target="_blank" rel="noopener" class="follow-link">YouTube — Deep Focus</a>
+        <a href="https://www.tiktok.com/@john_kiriakou_clips" target="_blank" rel="noopener" class="follow-link">TikTok Clips</a>
+        <a href="https://johnkiriakou.com" target="_blank" rel="noopener" class="follow-link">JohnKiriakou.com</a>
+      </div>
+    </div>
+
+    <div class="sidebar-block">
+      <div class="sidebar-label">Going Viral in 2026</div>
+      <p style="font-size:0.88rem;color:var(--gray);line-height:1.6;font-style:italic;">Clips from Kiriakou's interviews are reaching millions on TikTok, Instagram, and X. A new generation is discovering what happened — and demanding answers.</p>
+    </div>
+  </div>
+</div>
+
+<!-- TIMELINE -->
+<section id="timeline">
+  <div class="section-wrap">
+    <div class="section-header"><h2>A Life in Service — and Sacrifice</h2></div>
+    <div class="timeline-grid">
+
+      <div class="tl-year">1988</div>
+      <div class="tl-content">
+        <span class="tl-tag service">Service</span>
+        <h3>Recruited to the CIA</h3>
+        <p>Recruited out of George Washington University by professor and former CIA psychiatrist Jerrold Post. Begins an 18-year career in intelligence as a Middle East analyst specializing in Iraq.</p>
+      </div>
+
+      <div class="tl-year">1998–2000</div>
+      <div class="tl-content">
+        <span class="tl-tag service">Service</span>
+        <h3>Counterterrorism Operations, Athens</h3>
+        <p>Assigned to the CIA station in Athens targeting left-wing terrorist groups. Recruits foreign agents for the United States. Nearly assassinated.</p>
+      </div>
+
+      <div class="tl-year">2002</div>
+      <div class="tl-content">
+        <span class="tl-tag milestone">Milestone</span>
+        <h3>Leads the Capture of Abu Zubaydah</h3>
+        <p>As Chief of Counterterrorist Operations in Pakistan, leads the raid capturing Abu Zubaydah — then believed to be al-Qaeda's third-ranking official.</p>
+      </div>
+
+      <div class="tl-year">2004</div>
+      <div class="tl-content">
+        <span class="tl-tag service">Service</span>
+        <h3>Departs the CIA</h3>
+        <p>Leaves the CIA after nearly two decades. Later serves as senior investigator for the Senate Foreign Relations Committee under Senator John Kerry.</p>
+      </div>
+
+      <div class="tl-year">2007</div>
+      <div class="tl-content">
+        <span class="tl-tag milestone">Turning Point</span>
+        <h3>Tells the Truth on ABC News</h3>
+        <p>In a landmark interview with Brian Ross, Kiriakou becomes the first U.S. government official to publicly confirm the CIA used waterboarding — and calls it torture. The interview changes the national conversation.</p>
+      </div>
+
+      <div class="tl-year injustice">2012</div>
+      <div class="tl-content">
+        <span class="tl-tag injustice">Injustice</span>
+        <h3>Charged Under the Espionage Act</h3>
+        <p>The Obama Justice Department charges Kiriakou with leaking classified information. He is the first CIA officer ever prosecuted for talking to the media. Those who designed the torture program face no charges.</p>
+      </div>
+
+      <div class="tl-year injustice">2013</div>
+      <div class="tl-content">
+        <span class="tl-tag injustice">Injustice</span>
+        <h3>Begins 30-Month Prison Sentence</h3>
+        <p>Sentenced to 30 months in federal prison at Loretto, Pennsylvania. Serves 23 months. Writes the blog series "Letters From Loretto." No torturer is ever charged with a crime.</p>
+      </div>
+
+      <div class="tl-year">2015</div>
+      <div class="tl-content">
+        <span class="tl-tag milestone">Release</span>
+        <h3>Released — and Immediately Back to Work</h3>
+        <p>Released from prison. Immediately resumes writing and advocacy. Becomes a columnist for Consortium News and Covert Action Magazine. Launches the Deep Focus podcast.</p>
+      </div>
+
+      <div class="tl-year now">2026</div>
+      <div class="tl-content">
+        <span class="tl-tag now">Now</span>
+        <h3>Going Viral — A New Generation Learns the Truth</h3>
+        <p>Clips of Kiriakou's interviews go viral across TikTok, Instagram, and X — millions of views. A new generation is discovering what happened. The pardon campaign continues.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PETITION -->
+<section id="petition">
+  <div class="section-wrap">
+    <div class="section-header"><h2>Sign the Petition</h2></div>
+    <div class="petition-layout">
+      <div class="petition-statement">
+        <h3>"Whistleblowers who expose illegal government conduct should not be the ones imprisoned."</h3>
+        <p>Add your name to the call for a presidential pardon for John Kiriakou. The CIA's torture program was illegal. John Kiriakou told the American people it existed. He paid for that truth with 23 months of his life.</p>
+        <p>A pardon would not change what happened. But it would say, officially and on the record, that speaking truth to power is not a crime in the United States of America.</p>
+        <div class="petition-count-display">
+          <div class="big-num" id="sigCount">—</div>
+          <p>people have signed this petition</p>
+        </div>
+      </div>
+      <div class="petition-form-wrap">
+        <form id="petitionForm">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="first_name">First Name</label>
+              <input type="text" id="first_name" name="first_name" placeholder="Jane" required />
+            </div>
+            <div class="form-group">
+              <label for="last_name">Last Name</label>
+              <input type="text" id="last_name" name="last_name" placeholder="Smith" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="jane@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="zip">ZIP Code <span style="opacity:0.4">(optional)</span></label>
+            <input type="text" id="zip" name="zip" placeholder="44101" maxlength="5" />
+          </div>
+          <div class="form-group">
+            <label for="comment">Why do you support a pardon? <span style="opacity:0.4">(optional)</span></label>
+            <textarea id="comment" name="comment" placeholder="Share your thoughts..."></textarea>
+          </div>
+          <button type="submit" class="btn-stamp">Sign the Petition →</button>
+        </form>
+        <div class="form-message" id="formMessage"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT YOUR REP -->
+<section id="rep">
+  <div class="section-wrap">
+    <div class="section-header"><h2>Contact Your Representative</h2></div>
+    <p class="rep-intro-text">Enter your ZIP code to find your U.S. House member and senators — with a pre-written letter urging support for a Kiriakou pardon.</p>
+    <div class="rep-form">
+      <input type="text" id="repZip" placeholder="Enter your ZIP code" maxlength="5" />
+      <button class="btn-stamp" onclick="lookupRep()">Find My Reps →</button>
+    </div>
+    <div id="rep-results">
+      <h3>Your Representatives</h3>
+      <div class="rep-cards" id="repCards"></div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKS -->
+<section id="books">
+  <div class="section-wrap">
+    <div class="section-header"><h2>Books by John Kiriakou</h2></div>
+    <div class="books-grid">
+      <div class="book-card">
+        <div class="book-year">2010</div>
+        <h3>The Reluctant Spy: My Secret Life in the CIA's War on Terror</h3>
+        <p>His memoir of life inside the CIA. Reached #5 on the New York Times Bestsellers List.</p>
+        <a href="https://www.amazon.com/s?k=The+Reluctant+Spy+Kiriakou" target="_blank" rel="noopener">Find on Amazon ↗</a>
+      </div>
+      <div class="book-card">
+        <div class="book-year">2017</div>
+        <h3>Doing Time Like a Spy: How the CIA Taught Me to Survive and Thrive in Prison</h3>
+        <p>Memoir of his 23 months in federal prison. Finalist for Foreword Reviews Memoir of the Year.</p>
+        <a href="https://www.amazon.com/s?k=Doing+Time+Like+a+Spy+Kiriakou" target="_blank" rel="noopener">Find on Amazon ↗</a>
+      </div>
+      <div class="book-card">
+        <div class="book-year">2017</div>
+        <h3>The Convenient Terrorist: Abu Zubaydah and America's Secret Wars</h3>
+        <p>The full story of the man Kiriakou helped capture — and the torture program that followed.</p>
+        <a href="https://www.amazon.com/s?k=The+Convenient+Terrorist+Kiriakou" target="_blank" rel="noopener">Find on Amazon ↗</a>
+      </div>
+      <div class="book-card">
+        <div class="book-year">CIA Insider's Guide Series</div>
+        <h3>CIA Insider's Guide Series — 4 Volumes</h3>
+        <p>Iran Crisis · Surveillance & Detection · Lying & Lie Detection · Disappearing & Living Off the Grid.</p>
+        <a href="https://www.amazon.com/Books-John-Kiriakou/s?rh=n:283155,p_27:John%2BKiriakou" target="_blank" rel="noopener">Browse on Amazon ↗</a>
+      </div>
+      <div class="book-card">
+        <div class="book-year">June 2026 — Pre-Order</div>
+        <h3>New Book with Tucker Carlson</h3>
+        <p>Forthcoming title. Publication date: June 30, 2026. Pre-order available now.</p>
+        <a href="https://www.amazon.com/Books-John-Kiriakou/s?rh=n:283155,p_27:John%2BKiriakou" target="_blank" rel="noopener">Pre-Order ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MEDIA -->
+<section id="media">
+  <div class="section-wrap">
+    <div class="section-header"><h2>Watch &amp; Listen</h2></div>
+    <div class="media-grid">
+      <div class="media-card">
+        <div class="media-type">YouTube — His Own Show</div>
+        <h3>Deep Focus with John Kiriakou</h3>
+        <p>Interviews with leading newsmakers, investigative journalists, professors, and whistleblowers. Hosted by Kiriakou himself.</p>
+        <a href="https://www.youtube.com/@DeepFocuswithJohnKiriakou" target="_blank" rel="noopener">Watch on YouTube ↗</a>
+      </div>
+      <div class="media-card">
+        <div class="media-type">Daily Podcast</div>
+        <h3>Deprogrammed with Ted Rall</h3>
+        <p>Daily weekday podcast cutting through mainstream media spin with political cartoonist Ted Rall. Live 9AM EST.</p>
+        <a href="https://player.fm/podcasts/John-Kiriakou" target="_blank" rel="noopener">Listen Now ↗</a>
+      </div>
+      <div class="media-card">
+        <div class="media-type">Writing</div>
+        <h3>Consortium News &amp; Covert Action Magazine</h3>
+        <p>Regular columns on intelligence, civil liberties, government accountability, and foreign policy.</p>
+        <a href="https://consortiumnews.com/?s=kiriakou" target="_blank" rel="noopener">Read at Consortium News ↗</a>
+      </div>
+      <div class="media-card">
+        <div class="media-type">Viral Clips — TikTok &amp; Shorts</div>
+        <h3>Millions of Views in 2026</h3>
+        <p>Fan-clipped highlights from his interviews have reached millions across TikTok, Instagram Reels, and YouTube Shorts.</p>
+        <a href="https://www.tiktok.com/@john_kiriakou_clips" target="_blank" rel="noopener">Watch on TikTok ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWS -->
+<section id="news">
+  <div class="section-wrap">
+    <div class="section-header"><h2>Latest Coverage</h2></div>
+    <div class="news-grid" id="news-feed">
+      <p class="news-loading">Loading latest news...</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-name">Pardon John Kiriakou</div>
+  <div class="footer-links">
+    <a href="https://x.com/JohnKiriakou" target="_blank" rel="noopener">X / Twitter</a>
+    <a href="https://www.instagram.com/realjohnkiriakou/" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://www.youtube.com/@DeepFocuswithJohnKiriakou" target="_blank" rel="noopener">YouTube</a>
+    <a href="https://www.tiktok.com/@john_kiriakou_clips" target="_blank" rel="noopener">TikTok</a>
+    <a href="https://consortiumnews.com/?s=kiriakou" target="_blank" rel="noopener">Consortium News</a>
+    <a href="https://johnkiriakou.com" target="_blank" rel="noopener">JohnKiriakou.com</a>
+  </div>
+  <div class="footer-rule"></div>
+  <p class="footer-copy">An independent advocacy site. Not affiliated with John Kiriakou or any official campaign. Built to support a pardon for a whistleblower.</p>
+</footer>
+
+<script>
+  const SUPABASE_URL = 'YOUR_SUPABASE_URL';
+  const SUPABASE_KEY = 'YOUR_SUPABASE_ANON_KEY';
+
+  // PETITION
+  document.getElementById('petitionForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const btn = this.querySelector('button[type=submit]');
+    const msg = document.getElementById('formMessage');
+    btn.textContent = 'Submitting...';
+    btn.disabled = true;
+
+    const data = {
+      first_name: this.first_name.value.trim(),
+      last_name: this.last_name.value.trim(),
+      email: this.email.value.trim(),
+      zip: this.zip.value.trim(),
+      comment: this.comment.value.trim(),
+      signed_at: new Date().toISOString()
+    };
+
+    try {
+      const res = await fetch(`${SUPABASE_URL}/rest/v1/petition_signatures`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'apikey': SUPABASE_KEY,
+          'Authorization': `Bearer ${SUPABASE_KEY}`,
+          'Prefer': 'return=minimal'
+        },
+        body: JSON.stringify(data)
+      });
+      if (res.ok) {
+        msg.className = 'form-message success';
+        msg.textContent = '✓ Thank you. Your signature has been recorded.';
+        msg.style.display = 'block';
+        this.reset();
+        loadCount();
+      } else throw new Error();
+    } catch {
+      msg.className = 'form-message error';
+      msg.textContent = 'Something went wrong. Please try again.';
+      msg.style.display = 'block';
+    }
+    btn.textContent = 'Sign the Petition →';
+    btn.disabled = false;
+  });
+
+  async function loadCount() {
+    try {
+      const res = await fetch(`${SUPABASE_URL}/rest/v1/petition_signatures?select=id`, {
+        headers: { 'apikey': SUPABASE_KEY, 'Authorization': `Bearer ${SUPABASE_KEY}` }
+      });
+      if (!res.ok) return;
+      const data = await res.json();
+      if (data.length > 0) document.getElementById('sigCount').textContent = data.length.toLocaleString();
+    } catch {}
+  }
+
+  // CONTACT REP
+  async function lookupRep() {
+    const zip = document.getElementById('repZip').value.trim();
+    if (zip.length !== 5 || isNaN(zip)) { alert('Please enter a valid 5-digit ZIP code.'); return; }
+    const resultsDiv = document.getElementById('rep-results');
+    const cardsDiv = document.getElementById('repCards');
+    cardsDiv.innerHTML = '<p style="font-style:italic;color:var(--gray);">Looking up your representatives...</p>';
+    resultsDiv.style.display = 'block';
+
+    const subject = encodeURIComponent('Please Support a Presidential Pardon for John Kiriakou');
+    const body = encodeURIComponent(`Dear Representative/Senator,\n\nI am writing to urge you to support a presidential pardon for John Kiriakou, the former CIA officer prosecuted under the Espionage Act for confirming the CIA's use of waterboarding.\n\nMr. Kiriakou served his country for nearly two decades. When he told the truth about illegal government conduct, he was prosecuted. The CIA officers who designed and carried out the torture program were never charged.\n\nI urge you to publicly call for a pardon for John Kiriakou.\n\nThank you.`);
+
+    try {
+      const res = await fetch(`https://whoismyrepresentative.com/getall_mems.php?zip=${zip}&output=json`);
+      const data = await res.json();
+      const reps = data.results;
+      if (!reps || !reps.length) throw new Error();
+      cardsDiv.innerHTML = reps.map(r => `
+        <div class="rep-card">
+          <div class="rep-name">${r.name}</div>
+          <div class="rep-title">${r.title} — ${r.state}</div>
+          <a href="${r.email ? `mailto:${r.email}?subject=${subject}&body=${body}` : (r.link || '#')}" target="_blank">
+            ${r.email ? 'Send Email →' : 'Visit Website →'}
+          </a>
+        </div>
+      `).join('');
+    } catch {
+      cardsDiv.innerHTML = `
+        <div class="rep-card"><div class="rep-name">Find Your House Rep</div><div class="rep-title">Official House.gov lookup</div><a href="https://www.house.gov/representatives/find-your-representative" target="_blank">House.gov →</a></div>
+        <div class="rep-card"><div class="rep-name">Find Your Senators</div><div class="rep-title">Official Senate.gov lookup</div><a href="https://www.senate.gov/senators/senators-contact.htm" target="_blank">Senate.gov →</a></div>
+      `;
+    }
+  }
+
+  document.getElementById('repZip').addEventListener('keydown', e => { if (e.key === 'Enter') lookupRep(); });
+
+  // NEWS
+  async function loadNews() {
+    try {
+      const res = await fetch('/news.json');
+      if (!res.ok) throw new Error();
+      const articles = await res.json();
+      const feed = document.getElementById('news-feed');
+      if (!articles.length) { feed.innerHTML = '<p class="news-loading">No recent news found.</p>'; return; }
+      feed.innerHTML = articles.slice(0, 9).map(a => `
+        <div class="news-card">
+          <div class="news-source">${a.source || 'News'}</div>
+          <h3><a href="${a.url}" target="_blank" rel="noopener">${a.title}</a></h3>
+          <p class="news-date">${a.date ? new Date(a.date).toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric'}) : ''}</p>
+        </div>
+      `).join('');
+    } catch {
+      document.getElementById('news-feed').innerHTML = '<p class="news-loading">Check back soon for the latest coverage.</p>';
+    }
+  }
+
+  loadNews();
+  loadCount();
+</script>
+</body>
+</html>
