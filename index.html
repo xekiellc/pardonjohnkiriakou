@@ -17,7 +17,6 @@
       --paper: #f2ead8;
       --paper-dark: #e8dcc4;
       --red: #8b0000;
-      --red-bright: #b30000;
       --gray: #5a5040;
       --gray-light: #9a9080;
     }
@@ -33,12 +32,7 @@
       overflow-x: hidden;
     }
 
-    /* ── MASTHEAD ── */
-    .masthead {
-      background: var(--paper);
-      border-bottom: 3px double var(--ink);
-      text-align: center;
-    }
+    .masthead { background: var(--paper); border-bottom: 3px double var(--ink); text-align: center; }
 
     .masthead-top {
       display: flex;
@@ -55,11 +49,7 @@
     }
 
     .masthead-date { font-style: italic; font-family: 'Libre Baskerville', serif; font-size: 0.75rem; }
-
-    .masthead-title {
-      padding: 1.5rem 2rem 1rem;
-      border-bottom: 1px solid var(--ink);
-    }
+    .masthead-title { padding: 1.5rem 2rem 1rem; border-bottom: 1px solid var(--ink); }
 
     .masthead-eyebrow {
       font-family: 'Oswald', sans-serif;
@@ -86,7 +76,6 @@
       margin-top: 0.5rem;
     }
 
-    /* ── NAV ── */
     nav {
       display: flex;
       justify-content: center;
@@ -114,7 +103,6 @@
     nav a:first-child { border-left: 1px solid rgba(26,16,8,0.2); }
     nav a:hover { background: var(--ink); color: var(--paper); }
 
-    /* ── HERO ── */
     #hero {
       max-width: 1200px;
       margin: 0 auto;
@@ -158,12 +146,7 @@
       line-height: 1.5;
     }
 
-    .hero-body p {
-      font-size: 1rem;
-      line-height: 1.85;
-      margin-bottom: 1rem;
-      color: #2a1e10;
-    }
+    .hero-body p { font-size: 1rem; line-height: 1.85; margin-bottom: 1rem; color: #2a1e10; }
 
     .hero-body p:first-child::first-letter {
       font-family: 'UnifrakturMaguntia', cursive;
@@ -219,18 +202,8 @@
 
     .btn-ghost:hover { background: var(--ink); color: var(--paper); }
 
-    /* ── SIDEBAR ── */
-    .hero-sidebar {
-      border-left: 1px solid var(--ink);
-      padding-left: 2rem;
-    }
-
-    .sidebar-block {
-      margin-bottom: 2rem;
-      padding-bottom: 2rem;
-      border-bottom: 1px solid rgba(26,16,8,0.2);
-    }
-
+    .hero-sidebar { border-left: 1px solid var(--ink); padding-left: 2rem; }
+    .sidebar-block { margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(26,16,8,0.2); }
     .sidebar-block:last-child { border-bottom: none; }
 
     .sidebar-label {
@@ -245,29 +218,10 @@
       margin-bottom: 0.8rem;
     }
 
-    .stat-row {
-      display: flex;
-      gap: 1rem;
-      margin-bottom: 1rem;
-    }
-
+    .stat-row { display: flex; gap: 1rem; margin-bottom: 1rem; }
     .stat-item { flex: 1; text-align: center; padding: 0.8rem 0.5rem; background: var(--paper-dark); }
-
-    .stat-num {
-      font-family: 'Oswald', sans-serif;
-      font-weight: 700;
-      font-size: 2rem;
-      line-height: 1;
-      color: var(--ink);
-    }
-
-    .stat-txt {
-      font-size: 0.68rem;
-      font-style: italic;
-      color: var(--gray);
-      line-height: 1.3;
-      margin-top: 0.2rem;
-    }
+    .stat-num { font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 2rem; line-height: 1; color: var(--ink); }
+    .stat-txt { font-size: 0.68rem; font-style: italic; color: var(--gray); line-height: 1.3; margin-top: 0.2rem; }
 
     .follow-links { display: flex; flex-direction: column; gap: 0; }
 
@@ -290,19 +244,8 @@
     .follow-link:hover { color: var(--red); }
     .follow-link::after { content: '→'; }
 
-    /* ── SECTION SHARED ── */
-    .section-wrap {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 3rem 2rem;
-      border-bottom: 1px solid var(--ink);
-    }
-
-    .section-header {
-      text-align: center;
-      margin-bottom: 3rem;
-      position: relative;
-    }
+    .section-wrap { max-width: 1200px; margin: 0 auto; padding: 3rem 2rem; border-bottom: 1px solid var(--ink); }
+    .section-header { text-align: center; margin-bottom: 3rem; position: relative; }
 
     .section-header::before,
     .section-header::after {
@@ -329,11 +272,7 @@
       position: relative;
     }
 
-    /* ── TIMELINE ── */
-    .timeline-grid {
-      display: grid;
-      grid-template-columns: 90px 1fr;
-    }
+    .timeline-grid { display: grid; grid-template-columns: 90px 1fr; }
 
     .tl-year {
       font-family: 'Oswald', sans-serif;
@@ -380,30 +319,16 @@
     .tl-tag.injustice { background: #f8e8e8; color: var(--red); border: 1px solid var(--red); }
     .tl-tag.now { background: var(--ink); color: var(--paper); }
 
-    .tl-content h3 {
-      font-family: 'Libre Baskerville', serif;
-      font-weight: 700;
-      font-size: 1rem;
-      margin-bottom: 0.4rem;
-    }
-
+    .tl-content h3 { font-family: 'Libre Baskerville', serif; font-weight: 700; font-size: 1rem; margin-bottom: 0.4rem; }
     .tl-content p { font-size: 0.9rem; color: var(--gray); line-height: 1.6; }
 
-    /* ── PETITION ── */
     #petition { background: var(--ink); }
-
     #petition .section-wrap { border-bottom-color: rgba(242,234,216,0.15); }
-
     #petition .section-header h2 { background: var(--ink); color: var(--paper); }
     #petition .section-header::before,
     #petition .section-header::after { background: rgba(242,234,216,0.25); }
 
-    .petition-layout {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 4rem;
-      align-items: start;
-    }
+    .petition-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
 
     .petition-statement h3 {
       font-family: 'Libre Baskerville', serif;
@@ -415,33 +340,11 @@
       margin-bottom: 1.5rem;
     }
 
-    .petition-statement p {
-      font-size: 0.95rem;
-      color: rgba(242,234,216,0.65);
-      line-height: 1.8;
-      margin-bottom: 1rem;
-    }
+    .petition-statement p { font-size: 0.95rem; color: rgba(242,234,216,0.65); line-height: 1.8; margin-bottom: 1rem; }
 
-    .petition-count-display {
-      margin-top: 2rem;
-      padding: 1.5rem;
-      border: 1px solid rgba(242,234,216,0.2);
-      text-align: center;
-    }
-
-    .petition-count-display .big-num {
-      font-family: 'Oswald', sans-serif;
-      font-weight: 700;
-      font-size: 3rem;
-      color: var(--paper);
-    }
-
-    .petition-count-display p {
-      font-size: 0.8rem;
-      font-style: italic;
-      color: rgba(242,234,216,0.4);
-      margin: 0;
-    }
+    .petition-count-display { margin-top: 2rem; padding: 1.5rem; border: 1px solid rgba(242,234,216,0.2); text-align: center; }
+    .petition-count-display .big-num { font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 3rem; color: var(--paper); }
+    .petition-count-display p { font-size: 0.8rem; font-style: italic; color: rgba(242,234,216,0.4); margin: 0; }
 
     .form-group { margin-bottom: 1rem; }
 
@@ -471,7 +374,6 @@
 
     .form-group input::placeholder,
     .form-group textarea::placeholder { color: rgba(242,234,216,0.2); }
-
     .form-group input:focus,
     .form-group textarea:focus { border-color: rgba(242,234,216,0.5); }
 
@@ -489,33 +391,13 @@
 
     #petition .btn-stamp:hover { background: var(--paper-dark); }
 
-    .form-message {
-      display: none;
-      padding: 0.8rem 1rem;
-      font-family: 'Oswald', sans-serif;
-      font-size: 0.85rem;
-      margin-top: 0.8rem;
-    }
-
+    .form-message { display: none; padding: 0.8rem 1rem; font-family: 'Oswald', sans-serif; font-size: 0.85rem; margin-top: 0.8rem; }
     .form-message.success { background: rgba(100,180,100,0.12); color: #8dcc8d; border-left: 3px solid #8dcc8d; }
     .form-message.error { background: rgba(180,60,60,0.12); color: #e08080; border-left: 3px solid #e08080; }
 
-    /* ── REP ── */
     #rep { background: var(--paper-dark); }
-
-    .rep-intro-text {
-      font-style: italic;
-      color: var(--gray);
-      max-width: 580px;
-      margin: 0 auto 2rem;
-      text-align: center;
-    }
-
-    .rep-form {
-      display: flex;
-      max-width: 460px;
-      margin: 0 auto 2rem;
-    }
+    .rep-intro-text { font-style: italic; color: var(--gray); max-width: 580px; margin: 0 auto 2rem; text-align: center; }
+    .rep-form { display: flex; max-width: 460px; margin: 0 auto 2rem; }
 
     .rep-form input {
       flex: 1;
@@ -547,164 +429,46 @@
     }
 
     .rep-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1.5rem; }
-
     .rep-card { background: var(--paper); border: 1px solid rgba(26,16,8,0.15); padding: 1.5rem; }
-
     .rep-card .rep-name { font-family: 'Libre Baskerville', serif; font-weight: 700; font-size: 1rem; margin-bottom: 0.2rem; }
-
-    .rep-card .rep-title {
-      font-family: 'Oswald', sans-serif;
-      font-size: 0.7rem;
-      font-weight: 500;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--gray);
-      margin-bottom: 1rem;
-    }
-
-    .rep-card a {
-      font-family: 'Oswald', sans-serif;
-      font-size: 0.72rem;
-      font-weight: 600;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      background: var(--red);
-      color: var(--paper);
-      padding: 0.4rem 1rem;
-      text-decoration: none;
-      display: inline-block;
-      transition: background 0.2s;
-    }
-
+    .rep-card .rep-title { font-family: 'Oswald', sans-serif; font-size: 0.7rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray); margin-bottom: 1rem; }
+    .rep-card a { font-family: 'Oswald', sans-serif; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; background: var(--red); color: var(--paper); padding: 0.4rem 1rem; text-decoration: none; display: inline-block; transition: background 0.2s; }
     .rep-card a:hover { background: #5a0000; }
 
-    /* ── BOOKS ── */
-    .books-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
-      border-top: 1px solid rgba(26,16,8,0.15);
-      border-left: 1px solid rgba(26,16,8,0.15);
-    }
-
-    .book-card {
-      padding: 1.5rem;
-      border-right: 1px solid rgba(26,16,8,0.15);
-      border-bottom: 1px solid rgba(26,16,8,0.15);
-    }
-
-    .book-year {
-      font-family: 'Oswald', sans-serif;
-      font-size: 0.62rem;
-      font-weight: 600;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--red);
-      margin-bottom: 0.5rem;
-      border-top: 2px solid var(--red);
-      padding-top: 0.4rem;
-      display: inline-block;
-    }
-
-    .book-card h3 {
-      font-family: 'Libre Baskerville', serif;
-      font-weight: 700;
-      font-style: italic;
-      font-size: 0.92rem;
-      line-height: 1.4;
-      margin-bottom: 0.6rem;
-    }
-
+    .books-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); border-top: 1px solid rgba(26,16,8,0.15); border-left: 1px solid rgba(26,16,8,0.15); }
+    .book-card { padding: 1.5rem; border-right: 1px solid rgba(26,16,8,0.15); border-bottom: 1px solid rgba(26,16,8,0.15); }
+    .book-year { font-family: 'Oswald', sans-serif; font-size: 0.62rem; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--red); margin-bottom: 0.5rem; border-top: 2px solid var(--red); padding-top: 0.4rem; display: inline-block; }
+    .book-card h3 { font-family: 'Libre Baskerville', serif; font-weight: 700; font-style: italic; font-size: 0.92rem; line-height: 1.4; margin-bottom: 0.6rem; }
     .book-card p { font-size: 0.82rem; color: var(--gray); line-height: 1.5; margin-bottom: 1rem; }
-
-    .book-card a {
-      font-family: 'Oswald', sans-serif;
-      font-size: 0.7rem;
-      font-weight: 600;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--red);
-      text-decoration: none;
-    }
-
+    .book-card a { font-family: 'Oswald', sans-serif; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--red); text-decoration: none; }
     .book-card a:hover { text-decoration: underline; }
 
-    /* ── MEDIA ── */
     #media { background: var(--paper-dark); }
-
     .media-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.5rem; }
-
-    .media-card {
-      background: var(--paper);
-      border-top: 3px solid var(--ink);
-      padding: 1.5rem;
-    }
-
-    .media-type {
-      font-family: 'Oswald', sans-serif;
-      font-size: 0.62rem;
-      font-weight: 600;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--gray-light);
-      margin-bottom: 0.5rem;
-    }
-
+    .media-card { background: var(--paper); border-top: 3px solid var(--ink); padding: 1.5rem; }
+    .media-type { font-family: 'Oswald', sans-serif; font-size: 0.62rem; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gray-light); margin-bottom: 0.5rem; }
     .media-card h3 { font-family: 'Libre Baskerville', serif; font-weight: 700; font-size: 0.95rem; margin-bottom: 0.5rem; }
     .media-card p { font-size: 0.85rem; color: var(--gray); line-height: 1.5; margin-bottom: 1rem; }
     .media-card a { font-family: 'Oswald', sans-serif; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--red); text-decoration: none; }
     .media-card a:hover { text-decoration: underline; }
 
-    /* ── NEWS ── */
     .news-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 2rem; }
-
     .news-card { border-top: 1px solid var(--ink); padding-top: 1rem; }
-
-    .news-source {
-      font-family: 'Oswald', sans-serif;
-      font-size: 0.62rem;
-      font-weight: 600;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--red);
-      margin-bottom: 0.4rem;
-    }
-
+    .news-source { font-family: 'Oswald', sans-serif; font-size: 0.62rem; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--red); margin-bottom: 0.4rem; }
     .news-card h3 { font-family: 'Libre Baskerville', serif; font-weight: 700; font-size: 0.92rem; line-height: 1.4; margin-bottom: 0.4rem; }
     .news-card h3 a { color: var(--ink); text-decoration: none; }
     .news-card h3 a:hover { color: var(--red); }
     .news-date { font-size: 0.78rem; font-style: italic; color: var(--gray-light); }
     .news-loading { font-style: italic; color: var(--gray-light); }
 
-    /* ── FOOTER ── */
-    footer {
-      background: var(--ink);
-      border-top: 3px double var(--paper);
-      padding: 2.5rem 2rem;
-      text-align: center;
-    }
-
+    footer { background: var(--ink); border-top: 3px double var(--paper); padding: 2.5rem 2rem; text-align: center; }
     .footer-name { font-family: 'UnifrakturMaguntia', cursive; font-size: 2.2rem; color: var(--paper); margin-bottom: 1.5rem; }
-
     .footer-links { display: flex; justify-content: center; flex-wrap: wrap; gap: 0.5rem 2rem; margin-bottom: 1.5rem; }
-
-    .footer-links a {
-      font-family: 'Oswald', sans-serif;
-      font-size: 0.7rem;
-      font-weight: 500;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: rgba(242,234,216,0.45);
-      text-decoration: none;
-      transition: color 0.2s;
-    }
-
+    .footer-links a { font-family: 'Oswald', sans-serif; font-size: 0.7rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(242,234,216,0.45); text-decoration: none; transition: color 0.2s; }
     .footer-links a:hover { color: var(--paper); }
-
     .footer-rule { width: 60px; height: 1px; background: rgba(242,234,216,0.2); margin: 0 auto 1.5rem; }
-
     .footer-copy { font-size: 0.78rem; font-style: italic; color: rgba(242,234,216,0.3); }
 
-    /* ── RESPONSIVE ── */
     @media (max-width: 820px) {
       #hero { grid-template-columns: 1fr; }
       .hero-sidebar { border-left: none; padding-left: 0; border-top: 1px solid var(--ink); padding-top: 2rem; }
@@ -720,7 +484,6 @@
 </head>
 <body>
 
-<!-- MASTHEAD -->
 <header class="masthead">
   <div class="masthead-top">
     <span class="masthead-date">Saturday, May 2, 2026</span>
@@ -743,7 +506,6 @@
   </nav>
 </header>
 
-<!-- HERO / CASE -->
 <div id="hero">
   <div id="case">
     <span class="hero-kicker">The Case for a Pardon</span>
@@ -792,7 +554,6 @@
   </div>
 </div>
 
-<!-- TIMELINE -->
 <section id="timeline">
   <div class="section-wrap">
     <div class="section-header"><h2>A Life in Service — and Sacrifice</h2></div>
@@ -802,7 +563,7 @@
       <div class="tl-content">
         <span class="tl-tag service">Service</span>
         <h3>Recruited to the CIA</h3>
-        <p>Recruited out of George Washington University by professor and former CIA psychiatrist Jerrold Post. Begins an 18-year career in intelligence as a Middle East analyst specializing in Iraq.</p>
+        <p>Recruited out of George Washington University by professor and former CIA psychiatrist Jerrold Post. Begins an 18-year career in intelligence as a Middle East analyst.</p>
       </div>
 
       <div class="tl-year">1998–2000</div>
@@ -830,7 +591,7 @@
       <div class="tl-content">
         <span class="tl-tag milestone">Turning Point</span>
         <h3>Tells the Truth on ABC News</h3>
-        <p>In a landmark interview with Brian Ross, Kiriakou becomes the first U.S. government official to publicly confirm the CIA used waterboarding — and calls it torture. The interview changes the national conversation.</p>
+        <p>In a landmark interview with Brian Ross, becomes the first U.S. government official to publicly confirm the CIA used waterboarding — and calls it torture. The interview changes the national conversation.</p>
       </div>
 
       <div class="tl-year injustice">2012</div>
@@ -844,7 +605,7 @@
       <div class="tl-content">
         <span class="tl-tag injustice">Injustice</span>
         <h3>Begins 30-Month Prison Sentence</h3>
-        <p>Sentenced to 30 months in federal prison at Loretto, Pennsylvania. Serves 23 months. Writes the blog series "Letters From Loretto." No torturer is ever charged with a crime.</p>
+        <p>Sentenced to 30 months in federal prison at Loretto, Pennsylvania. Serves 23 months. Writes the blog series "Letters From Loretto." No torturer is ever charged.</p>
       </div>
 
       <div class="tl-year">2015</div>
@@ -865,7 +626,6 @@
   </div>
 </section>
 
-<!-- PETITION -->
 <section id="petition">
   <div class="section-wrap">
     <div class="section-header"><h2>Sign the Petition</h2></div>
@@ -911,7 +671,6 @@
   </div>
 </section>
 
-<!-- CONTACT YOUR REP -->
 <section id="rep">
   <div class="section-wrap">
     <div class="section-header"><h2>Contact Your Representative</h2></div>
@@ -927,7 +686,6 @@
   </div>
 </section>
 
-<!-- BOOKS -->
 <section id="books">
   <div class="section-wrap">
     <div class="section-header"><h2>Books by John Kiriakou</h2></div>
@@ -966,7 +724,6 @@
   </div>
 </section>
 
-<!-- MEDIA -->
 <section id="media">
   <div class="section-wrap">
     <div class="section-header"><h2>Watch &amp; Listen</h2></div>
@@ -974,7 +731,7 @@
       <div class="media-card">
         <div class="media-type">YouTube — His Own Show</div>
         <h3>Deep Focus with John Kiriakou</h3>
-        <p>Interviews with leading newsmakers, investigative journalists, professors, and whistleblowers. Hosted by Kiriakou himself.</p>
+        <p>Interviews with leading newsmakers, investigative journalists, professors, and whistleblowers.</p>
         <a href="https://www.youtube.com/@DeepFocuswithJohnKiriakou" target="_blank" rel="noopener">Watch on YouTube ↗</a>
       </div>
       <div class="media-card">
@@ -999,7 +756,6 @@
   </div>
 </section>
 
-<!-- NEWS -->
 <section id="news">
   <div class="section-wrap">
     <div class="section-header"><h2>Latest Coverage</h2></div>
@@ -1009,7 +765,6 @@
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
   <div class="footer-name">Pardon John Kiriakou</div>
   <div class="footer-links">
@@ -1025,10 +780,9 @@
 </footer>
 
 <script>
-  const SUPABASE_URL = 'YOUR_SUPABASE_URL';
-  const SUPABASE_KEY = 'YOUR_SUPABASE_ANON_KEY';
+  const SUPABASE_URL = 'https://ryahfxjwqqcvhtxsurmy.supabase.co';
+  const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJ5YWhmeGp3cXFjdmh0eHN1cm15Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzc3NTI0MjAsImV4cCI6MjA5MzMyODQyMH0.p_ASGhkIqtIt8kQOV-QL3t8oLdXMX_tGVzdpz9YoC2c';
 
-  // PETITION
   document.getElementById('petitionForm').addEventListener('submit', async function(e) {
     e.preventDefault();
     const btn = this.querySelector('button[type=submit]');
@@ -1083,7 +837,6 @@
     } catch {}
   }
 
-  // CONTACT REP
   async function lookupRep() {
     const zip = document.getElementById('repZip').value.trim();
     if (zip.length !== 5 || isNaN(zip)) { alert('Please enter a valid 5-digit ZIP code.'); return; }
@@ -1119,7 +872,6 @@
 
   document.getElementById('repZip').addEventListener('keydown', e => { if (e.key === 'Enter') lookupRep(); });
 
-  // NEWS
   async function loadNews() {
     try {
       const res = await fetch('/news.json');
