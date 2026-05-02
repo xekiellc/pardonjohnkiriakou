@@ -8,6 +8,14 @@
   <meta property="og:title" content="Pardon John Kiriakou" />
   <meta property="og:description" content="He told the truth about torture. They put him in prison. Sign the petition for a presidential pardon." />
   <meta property="og:url" content="https://pardonjohnkiriakou.com" />
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7PTGY5FWSN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-7PTGY5FWSN');
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -476,16 +484,7 @@
     .news-loading { font-style: italic; color: var(--gray-light); }
 
     footer { background: var(--ink); border-top: 3px double var(--paper); padding: 2.5rem 2rem; text-align: center; }
-
-    .footer-name {
-      font-family: 'Cormorant Garamond', serif;
-      font-weight: 700;
-      font-size: 2.8rem;
-      color: var(--paper);
-      margin-bottom: 1.5rem;
-      letter-spacing: 0.05em;
-    }
-
+    .footer-name { font-family: 'Cormorant Garamond', serif; font-weight: 700; font-size: 2.8rem; color: var(--paper); margin-bottom: 1.5rem; letter-spacing: 0.05em; }
     .footer-links { display: flex; justify-content: center; flex-wrap: wrap; gap: 0.5rem 2rem; margin-bottom: 1.5rem; }
     .footer-links a { font-family: 'Oswald', sans-serif; font-size: 0.7rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(242,234,216,0.45); text-decoration: none; transition: color 0.2s; }
     .footer-links a:hover { color: var(--paper); }
@@ -815,7 +814,6 @@
     const msg = document.getElementById('formMessage');
     btn.textContent = 'Submitting...';
     btn.disabled = true;
-
     const data = {
       first_name: this.first_name.value.trim(),
       last_name: this.last_name.value.trim(),
@@ -824,7 +822,6 @@
       comment: this.comment.value.trim(),
       signed_at: new Date().toISOString()
     };
-
     try {
       const res = await fetch(`${SUPABASE_URL}/rest/v1/petition_signatures`, {
         method: 'POST',
@@ -870,10 +867,8 @@
     const cardsDiv = document.getElementById('repCards');
     cardsDiv.innerHTML = '<p style="font-style:italic;color:var(--gray);">Looking up your representatives...</p>';
     resultsDiv.style.display = 'block';
-
     const subject = encodeURIComponent('Please Support a Presidential Pardon for John Kiriakou');
     const body = encodeURIComponent(`Dear Representative/Senator,\n\nI am writing to urge you to support a presidential pardon for John Kiriakou, the former CIA officer prosecuted under the Espionage Act for confirming the CIA's use of waterboarding.\n\nMr. Kiriakou served his country for nearly two decades. When he told the truth about illegal government conduct, he was prosecuted. The CIA officers who designed and carried out the torture program were never charged.\n\nI urge you to publicly call for a pardon for John Kiriakou.\n\nThank you.`);
-
     try {
       const res = await fetch(`https://whoismyrepresentative.com/getall_mems.php?zip=${zip}&output=json`);
       const data = await res.json();
@@ -904,7 +899,7 @@
       if (!res.ok) throw new Error();
       const articles = await res.json();
       const feed = document.getElementById('news-feed');
-      if (!articles.length) { feed.innerHTML = '<p class="news-loading">No recent news found.</p>'; return; }
+      if (!articles.length) { feed.innerHTML = '<p class="news-loading">Check back soon for the latest coverage.</p>'; return; }
       feed.innerHTML = articles.slice(0, 9).map(a => `
         <div class="news-card">
           <div class="news-source">${a.source || 'News'}</div>
