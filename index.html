@@ -8,6 +8,7 @@
   <meta property="og:title" content="Pardon John Kiriakou" />
   <meta property="og:description" content="He told the truth about torture. They put him in prison. Sign the petition for a presidential pardon." />
   <meta property="og:url" content="https://pardonjohnkiriakou.com" />
+  <meta name="google-site-verification" content="pardonjohnkiriakou.com" />
   <!-- GA4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-7PTGY5FWSN"></script>
   <script>
@@ -110,13 +111,13 @@
 
     nav a {
       font-family: 'Oswald', sans-serif;
-      font-size: 0.72rem;
+      font-size: 0.68rem;
       font-weight: 500;
       letter-spacing: 0.15em;
       text-transform: uppercase;
       color: var(--ink);
       text-decoration: none;
-      padding: 0.7rem 1.4rem;
+      padding: 0.7rem 1rem;
       border-right: 1px solid rgba(26,16,8,0.2);
       transition: background 0.15s, color 0.15s;
     }
@@ -274,7 +275,7 @@
       content: '';
       position: absolute;
       top: 50%;
-      width: calc(50% - 140px);
+      width: calc(50% - 160px);
       height: 1px;
       background: var(--ink);
     }
@@ -294,6 +295,15 @@
       position: relative;
     }
 
+    /* section backgrounds */
+    #rep { background: var(--paper-dark); }
+    #media { background: var(--paper-dark); }
+    #appearances { background: var(--paper); }
+    #coverage { background: var(--paper-dark); }
+
+    .section-header.on-dark h2 { background: var(--paper-dark); }
+
+    /* TIMELINE */
     .timeline-grid { display: grid; grid-template-columns: 90px 1fr; }
 
     .tl-year {
@@ -344,6 +354,7 @@
     .tl-content h3 { font-family: 'Libre Baskerville', serif; font-weight: 700; font-size: 1rem; margin-bottom: 0.4rem; }
     .tl-content p { font-size: 0.9rem; color: var(--gray); line-height: 1.6; }
 
+    /* PETITION */
     #petition { background: var(--ink); }
     #petition .section-wrap { border-bottom-color: rgba(242,234,216,0.15); }
     #petition .section-header h2 { background: var(--ink); color: var(--paper); }
@@ -417,7 +428,7 @@
     .form-message.success { background: rgba(100,180,100,0.12); color: #8dcc8d; border-left: 3px solid #8dcc8d; }
     .form-message.error { background: rgba(180,60,60,0.12); color: #e08080; border-left: 3px solid #e08080; }
 
-    #rep { background: var(--paper-dark); }
+    /* REP */
     .rep-intro-text { font-style: italic; color: var(--gray); max-width: 580px; margin: 0 auto 2rem; text-align: center; }
     .rep-form { display: flex; max-width: 460px; margin: 0 auto 2rem; }
 
@@ -457,6 +468,7 @@
     .rep-card a { font-family: 'Oswald', sans-serif; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; background: var(--red); color: var(--paper); padding: 0.4rem 1rem; text-decoration: none; display: inline-block; transition: background 0.2s; }
     .rep-card a:hover { background: #5a0000; }
 
+    /* BOOKS */
     .books-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); border-top: 1px solid rgba(26,16,8,0.15); border-left: 1px solid rgba(26,16,8,0.15); }
     .book-card { padding: 1.5rem; border-right: 1px solid rgba(26,16,8,0.15); border-bottom: 1px solid rgba(26,16,8,0.15); }
     .book-year { font-family: 'Oswald', sans-serif; font-size: 0.62rem; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--red); margin-bottom: 0.5rem; border-top: 2px solid var(--red); padding-top: 0.4rem; display: inline-block; }
@@ -465,7 +477,7 @@
     .book-card a { font-family: 'Oswald', sans-serif; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--red); text-decoration: none; }
     .book-card a:hover { text-decoration: underline; }
 
-    #media { background: var(--paper-dark); }
+    /* MEDIA */
     .media-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.5rem; }
     .media-card { background: var(--paper); border-top: 3px solid var(--ink); padding: 1.5rem; }
     .media-type { font-family: 'Oswald', sans-serif; font-size: 0.62rem; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gray-light); margin-bottom: 0.5rem; }
@@ -474,6 +486,102 @@
     .media-card a { font-family: 'Oswald', sans-serif; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--red); text-decoration: none; }
     .media-card a:hover { text-decoration: underline; }
 
+    /* APPEARANCES */
+    .appearances-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem; }
+
+    .appearance-card {
+      border: 1px solid rgba(26,16,8,0.12);
+      padding: 1.5rem;
+      background: var(--paper);
+      transition: border-color 0.2s;
+    }
+
+    .appearance-card:hover { border-color: var(--red); }
+
+    .app-platform {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.62rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-bottom: 0.4rem;
+    }
+
+    .appearance-card h3 {
+      font-family: 'Libre Baskerville', serif;
+      font-weight: 700;
+      font-size: 0.95rem;
+      line-height: 1.4;
+      margin-bottom: 0.4rem;
+    }
+
+    .appearance-card p {
+      font-size: 0.82rem;
+      color: var(--gray);
+      line-height: 1.5;
+      margin-bottom: 1rem;
+    }
+
+    .appearance-card a {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--red);
+      text-decoration: none;
+    }
+
+    .appearance-card a:hover { text-decoration: underline; }
+
+    /* COVERAGE */
+    .coverage-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; }
+
+    .coverage-card {
+      background: var(--paper);
+      border-top: 3px solid var(--ink);
+      padding: 1.5rem;
+    }
+
+    .coverage-outlet {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.62rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gray-light);
+      margin-bottom: 0.4rem;
+    }
+
+    .coverage-card h3 {
+      font-family: 'Libre Baskerville', serif;
+      font-weight: 700;
+      font-size: 0.95rem;
+      line-height: 1.4;
+      margin-bottom: 0.4rem;
+    }
+
+    .coverage-card p {
+      font-size: 0.82rem;
+      color: var(--gray);
+      line-height: 1.5;
+      margin-bottom: 1rem;
+    }
+
+    .coverage-card a {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--red);
+      text-decoration: none;
+    }
+
+    .coverage-card a:hover { text-decoration: underline; }
+
+    /* NEWS */
     .news-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 2rem; }
     .news-card { border-top: 1px solid var(--ink); padding-top: 1rem; }
     .news-source { font-family: 'Oswald', sans-serif; font-size: 0.62rem; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--red); margin-bottom: 0.4rem; }
@@ -483,6 +591,7 @@
     .news-date { font-size: 0.78rem; font-style: italic; color: var(--gray-light); }
     .news-loading { font-style: italic; color: var(--gray-light); }
 
+    /* FOOTER */
     footer { background: var(--ink); border-top: 3px double var(--paper); padding: 2.5rem 2rem; text-align: center; }
     .footer-name { font-family: 'Cormorant Garamond', serif; font-weight: 700; font-size: 2.8rem; color: var(--paper); margin-bottom: 1.5rem; letter-spacing: 0.05em; }
     .footer-links { display: flex; justify-content: center; flex-wrap: wrap; gap: 0.5rem 2rem; margin-bottom: 1.5rem; }
@@ -497,7 +606,7 @@
       .petition-layout { grid-template-columns: 1fr; }
       .form-grid { grid-template-columns: 1fr; }
       .section-header::before, .section-header::after { display: none; }
-      nav a { font-size: 0.65rem; padding: 0.6rem 0.8rem; }
+      nav a { font-size: 0.62rem; padding: 0.6rem 0.7rem; }
       .rep-form { flex-direction: column; }
       .rep-form input { border-right: 1px solid var(--ink); border-bottom: none; }
       .masthead-top { flex-direction: column; gap: 0.3rem; text-align: center; }
@@ -527,6 +636,8 @@
     <a href="#rep">Contact Rep</a>
     <a href="#books">Books</a>
     <a href="#media">Media</a>
+    <a href="#appearances">Appearances</a>
+    <a href="#coverage">Coverage</a>
     <a href="#news">News</a>
   </nav>
 </header>
@@ -579,6 +690,7 @@
   </div>
 </div>
 
+<!-- TIMELINE -->
 <section id="timeline">
   <div class="section-wrap">
     <div class="section-header"><h2>A Life in Service — and Sacrifice</h2></div>
@@ -595,14 +707,14 @@
       <div class="tl-content">
         <span class="tl-tag service">Service</span>
         <h3>Counterterrorism Operations, Athens</h3>
-        <p>Assigned to the CIA station in Athens targeting left-wing terrorist groups. Recruits foreign agents for the United States. Nearly assassinated.</p>
+        <p>Assigned to the CIA station in Athens targeting left-wing terrorist groups. Recruits foreign agents for the United States. Nearly assassinated in the line of duty.</p>
       </div>
 
       <div class="tl-year">2002</div>
       <div class="tl-content">
         <span class="tl-tag milestone">Milestone</span>
         <h3>Leads the Capture of Abu Zubaydah</h3>
-        <p>As Chief of Counterterrorist Operations in Pakistan, leads the raid capturing Abu Zubaydah — then believed to be al-Qaeda's third-ranking official.</p>
+        <p>As Chief of Counterterrorist Operations in Pakistan, leads the raid capturing Abu Zubaydah — then believed to be al-Qaeda's third-ranking official. The capture was hailed as a major victory in the War on Terror.</p>
       </div>
 
       <div class="tl-year">2004</div>
@@ -616,41 +728,42 @@
       <div class="tl-content">
         <span class="tl-tag milestone">Turning Point</span>
         <h3>Tells the Truth on ABC News</h3>
-        <p>In a landmark interview with Brian Ross, becomes the first U.S. government official to publicly confirm the CIA used waterboarding — and calls it torture. The interview changes the national conversation.</p>
+        <p>In a landmark interview with Brian Ross, becomes the first U.S. government official to publicly confirm the CIA used waterboarding — and calls it torture. The interview changes the national conversation on government accountability forever.</p>
       </div>
 
       <div class="tl-year injustice">2012</div>
       <div class="tl-content">
         <span class="tl-tag injustice">Injustice</span>
         <h3>Charged Under the Espionage Act</h3>
-        <p>The Obama Justice Department charges Kiriakou with leaking classified information. He is the first CIA officer ever prosecuted for talking to the media. Those who designed the torture program face no charges.</p>
+        <p>The Obama Justice Department charges Kiriakou with leaking classified information — making him the first CIA officer ever prosecuted for talking to the media. The architects of the torture program face no charges whatsoever.</p>
       </div>
 
       <div class="tl-year injustice">2013</div>
       <div class="tl-content">
         <span class="tl-tag injustice">Injustice</span>
         <h3>Begins 30-Month Prison Sentence</h3>
-        <p>Sentenced to 30 months in federal prison at Loretto, Pennsylvania. Serves 23 months. Writes the blog series "Letters From Loretto." No torturer is ever charged.</p>
+        <p>Sentenced to 30 months in federal prison at Loretto, Pennsylvania. Serves 23 months. Writes the widely-read blog series "Letters From Loretto." No torturer is ever charged with a crime.</p>
       </div>
 
       <div class="tl-year">2015</div>
       <div class="tl-content">
         <span class="tl-tag milestone">Release</span>
         <h3>Released — and Immediately Back to Work</h3>
-        <p>Released from prison. Immediately resumes writing and advocacy. Becomes a columnist for Consortium News and Covert Action Magazine. Launches the Deep Focus podcast.</p>
+        <p>Released from prison. Immediately resumes writing and advocacy for civil liberties and government accountability. Launches the Deep Focus podcast and becomes a columnist for Consortium News.</p>
       </div>
 
       <div class="tl-year now">2026</div>
       <div class="tl-content">
         <span class="tl-tag now">Now</span>
         <h3>Going Viral — A New Generation Learns the Truth</h3>
-        <p>Clips of Kiriakou's interviews go viral across TikTok, Instagram, and X — millions of views. A new generation is discovering what happened. The pardon campaign continues.</p>
+        <p>Clips of Kiriakou's interviews go viral across TikTok, Instagram, and X — millions of views. A new generation is discovering what happened. A new book with Tucker Carlson drops June 2026. The pardon campaign continues.</p>
       </div>
 
     </div>
   </div>
 </section>
 
+<!-- PETITION -->
 <section id="petition">
   <div class="section-wrap">
     <div class="section-header"><h2>Sign the Petition</h2></div>
@@ -696,9 +809,10 @@
   </div>
 </section>
 
+<!-- CONTACT YOUR REP -->
 <section id="rep">
   <div class="section-wrap">
-    <div class="section-header"><h2>Contact Your Representative</h2></div>
+    <div class="section-header on-dark"><h2>Contact Your Representative</h2></div>
     <p class="rep-intro-text">Enter your ZIP code to find your U.S. House member and senators — with a pre-written letter urging support for a Kiriakou pardon.</p>
     <div class="rep-form">
       <input type="text" id="repZip" placeholder="Enter your ZIP code" maxlength="5" />
@@ -711,6 +825,7 @@
   </div>
 </section>
 
+<!-- BOOKS -->
 <section id="books">
   <div class="section-wrap">
     <div class="section-header"><h2>Books by John Kiriakou</h2></div>
@@ -718,69 +833,229 @@
       <div class="book-card">
         <div class="book-year">2010</div>
         <h3>The Reluctant Spy: My Secret Life in the CIA's War on Terror</h3>
-        <p>His memoir of life inside the CIA. Reached #5 on the New York Times Bestsellers List.</p>
+        <p>His memoir of life inside the CIA — from recruitment to the capture of Abu Zubaydah. Reached #5 on the New York Times Bestsellers List.</p>
         <a href="https://www.amazon.com/s?k=The+Reluctant+Spy+Kiriakou" target="_blank" rel="noopener">Find on Amazon ↗</a>
       </div>
       <div class="book-card">
         <div class="book-year">2017</div>
         <h3>Doing Time Like a Spy: How the CIA Taught Me to Survive and Thrive in Prison</h3>
-        <p>Memoir of his 23 months in federal prison. Finalist for Foreword Reviews Memoir of the Year.</p>
+        <p>A memoir of his 23 months in federal prison and how CIA training prepared him for it. Finalist for Foreword Reviews Memoir of the Year.</p>
         <a href="https://www.amazon.com/s?k=Doing+Time+Like+a+Spy+Kiriakou" target="_blank" rel="noopener">Find on Amazon ↗</a>
       </div>
       <div class="book-card">
         <div class="book-year">2017</div>
         <h3>The Convenient Terrorist: Abu Zubaydah and America's Secret Wars</h3>
-        <p>The full story of the man Kiriakou helped capture — and the torture program that followed.</p>
+        <p>The full story of the man Kiriakou helped capture — and the illegal torture program that followed his arrest.</p>
         <a href="https://www.amazon.com/s?k=The+Convenient+Terrorist+Kiriakou" target="_blank" rel="noopener">Find on Amazon ↗</a>
       </div>
       <div class="book-card">
         <div class="book-year">CIA Insider's Guide Series</div>
         <h3>CIA Insider's Guide Series — 4 Volumes</h3>
-        <p>Iran Crisis · Surveillance & Detection · Lying & Lie Detection · Disappearing & Living Off the Grid.</p>
+        <p>Iran Crisis · Surveillance & Surveillance Detection · Lying & Lie Detection · Disappearing & Living Off the Grid.</p>
         <a href="https://www.amazon.com/Books-John-Kiriakou/s?rh=n:283155,p_27:John%2BKiriakou" target="_blank" rel="noopener">Browse on Amazon ↗</a>
       </div>
       <div class="book-card">
-        <div class="book-year">June 2026 — Pre-Order</div>
+        <div class="book-year">June 2026 — Pre-Order Now</div>
         <h3>New Book with Tucker Carlson</h3>
-        <p>Forthcoming title. Publication date: June 30, 2026. Pre-order available now.</p>
+        <p>Forthcoming title co-authored with Tucker Carlson. Publication date: June 30, 2026. Pre-order available now on Amazon.</p>
         <a href="https://www.amazon.com/Books-John-Kiriakou/s?rh=n:283155,p_27:John%2BKiriakou" target="_blank" rel="noopener">Pre-Order ↗</a>
       </div>
     </div>
   </div>
 </section>
 
+<!-- MEDIA -->
 <section id="media">
   <div class="section-wrap">
-    <div class="section-header"><h2>Watch &amp; Listen</h2></div>
+    <div class="section-header on-dark"><h2>His Own Platforms</h2></div>
     <div class="media-grid">
       <div class="media-card">
         <div class="media-type">YouTube — His Own Show</div>
         <h3>Deep Focus with John Kiriakou</h3>
-        <p>Interviews with leading newsmakers, investigative journalists, professors, and whistleblowers.</p>
+        <p>Kiriakou's own YouTube channel featuring in-depth interviews with newsmakers, investigative journalists, professors, and fellow whistleblowers.</p>
         <a href="https://www.youtube.com/@DeepFocuswithJohnKiriakou" target="_blank" rel="noopener">Watch on YouTube ↗</a>
       </div>
       <div class="media-card">
         <div class="media-type">Daily Podcast</div>
         <h3>Deprogrammed with Ted Rall</h3>
-        <p>Daily weekday podcast cutting through mainstream media spin with political cartoonist Ted Rall. Live 9AM EST.</p>
+        <p>Daily weekday podcast co-hosted with political cartoonist Ted Rall. Cutting through mainstream media spin every morning at 9AM EST.</p>
         <a href="https://player.fm/podcasts/John-Kiriakou" target="_blank" rel="noopener">Listen Now ↗</a>
       </div>
       <div class="media-card">
-        <div class="media-type">Writing</div>
-        <h3>Consortium News &amp; Covert Action Magazine</h3>
-        <p>Regular columns on intelligence, civil liberties, government accountability, and foreign policy.</p>
+        <div class="media-type">Writing — Consortium News</div>
+        <h3>Consortium News Columns</h3>
+        <p>Regular columns on intelligence, civil liberties, government accountability, torture, and U.S. foreign policy.</p>
         <a href="https://consortiumnews.com/?s=kiriakou" target="_blank" rel="noopener">Read at Consortium News ↗</a>
       </div>
       <div class="media-card">
-        <div class="media-type">Viral Clips — TikTok &amp; Shorts</div>
+        <div class="media-type">Writing — Covert Action Magazine</div>
+        <h3>Covert Action Magazine</h3>
+        <p>Investigative pieces on intelligence community abuses, surveillance, and the national security state.</p>
+        <a href="https://covertactionmagazine.com/?s=kiriakou" target="_blank" rel="noopener">Read at Covert Action ↗</a>
+      </div>
+      <div class="media-card">
+        <div class="media-type">Going Viral — TikTok &amp; Shorts</div>
         <h3>Millions of Views in 2026</h3>
-        <p>Fan-clipped highlights from his interviews have reached millions across TikTok, Instagram Reels, and YouTube Shorts.</p>
+        <p>Fan-clipped highlights from interviews reaching millions across TikTok, Instagram Reels, and YouTube Shorts. A new generation is paying attention.</p>
         <a href="https://www.tiktok.com/@john_kiriakou_clips" target="_blank" rel="noopener">Watch on TikTok ↗</a>
+      </div>
+      <div class="media-card">
+        <div class="media-type">Personal Website</div>
+        <h3>JohnKiriakou.com</h3>
+        <p>His official website with latest writing, speaking schedule, updates, and direct contact information.</p>
+        <a href="https://johnkiriakou.com" target="_blank" rel="noopener">Visit JohnKiriakou.com ↗</a>
       </div>
     </div>
   </div>
 </section>
 
+<!-- APPEARANCES -->
+<section id="appearances">
+  <div class="section-wrap">
+    <div class="section-header"><h2>Notable Appearances &amp; Interviews</h2></div>
+    <div class="appearances-grid">
+
+      <div class="appearance-card">
+        <div class="app-platform">YouTube / Interview</div>
+        <h3>Tucker Carlson Network — Full Interview</h3>
+        <p>Wide-ranging conversation covering his CIA career, the torture program, his prosecution, and what he believes the government is still hiding.</p>
+        <a href="https://www.youtube.com/results?search_query=john+kiriakou+tucker+carlson" target="_blank" rel="noopener">Watch on YouTube ↗</a>
+      </div>
+
+      <div class="appearance-card">
+        <div class="app-platform">Podcast / The Grayzone</div>
+        <h3>The Grayzone with Aaron Maté</h3>
+        <p>Discussion of CIA torture, the Espionage Act as a tool of political persecution, and the treatment of whistleblowers under successive administrations.</p>
+        <a href="https://www.youtube.com/results?search_query=john+kiriakou+grayzone" target="_blank" rel="noopener">Watch ↗</a>
+      </div>
+
+      <div class="appearance-card">
+        <div class="app-platform">Podcast / Useful Idiots</div>
+        <h3>Useful Idiots — Matt Taibbi &amp; Katie Halper</h3>
+        <p>Conversation on government secrecy, the war on whistleblowers, and how the security state operates to protect itself at all costs.</p>
+        <a href="https://www.youtube.com/results?search_query=john+kiriakou+useful+idiots" target="_blank" rel="noopener">Watch ↗</a>
+      </div>
+
+      <div class="appearance-card">
+        <div class="app-platform">Podcast / Due Dissidence</div>
+        <h3>Due Dissidence Podcast</h3>
+        <p>On the state of civil liberties in America, the expansion of the surveillance state, and why whistleblower protections are essential to democracy.</p>
+        <a href="https://www.youtube.com/results?search_query=john+kiriakou+due+dissidence" target="_blank" rel="noopener">Watch ↗</a>
+      </div>
+
+      <div class="appearance-card">
+        <div class="app-platform">TV / RT America</div>
+        <h3>Fault Lines — RT America</h3>
+        <p>Regular contributor discussing intelligence community overreach, national security law, and the persecution of government truth-tellers.</p>
+        <a href="https://www.youtube.com/results?search_query=john+kiriakou+fault+lines" target="_blank" rel="noopener">Watch ↗</a>
+      </div>
+
+      <div class="appearance-card">
+        <div class="app-platform">Podcast / Scheer Intelligence</div>
+        <h3>Scheer Intelligence with Robert Scheer</h3>
+        <p>In-depth conversation on CIA torture, the moral collapse of American intelligence institutions, and the price paid for speaking truth.</p>
+        <a href="https://www.youtube.com/results?search_query=john+kiriakou+scheer+intelligence" target="_blank" rel="noopener">Watch ↗</a>
+      </div>
+
+      <div class="appearance-card">
+        <div class="app-platform">Podcast / Rokfin</div>
+        <h3>The Katie Halper Show</h3>
+        <p>Conversation on the weaponization of the Espionage Act against journalists and whistleblowers and what it means for press freedom.</p>
+        <a href="https://www.youtube.com/results?search_query=john+kiriakou+katie+halper" target="_blank" rel="noopener">Watch ↗</a>
+      </div>
+
+      <div class="appearance-card">
+        <div class="app-platform">ABC News — 2007</div>
+        <h3>The Interview That Changed Everything</h3>
+        <p>The landmark 2007 ABC News interview with Brian Ross in which Kiriakou became the first U.S. official to publicly confirm CIA waterboarding. The interview that started it all.</p>
+        <a href="https://www.youtube.com/results?search_query=kiriakou+ABC+news+waterboarding+2007" target="_blank" rel="noopener">Watch ↗</a>
+      </div>
+
+      <div class="appearance-card">
+        <div class="app-platform">Podcast / Unauthorized Disclosure</div>
+        <h3>Unauthorized Disclosure — Kevin Gosztola</h3>
+        <p>Discussion of the government's ongoing use of the Espionage Act as a political weapon against those who expose illegal state conduct.</p>
+        <a href="https://www.youtube.com/results?search_query=john+kiriakou+unauthorized+disclosure" target="_blank" rel="noopener">Watch ↗</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- POSITIVE COVERAGE -->
+<section id="coverage">
+  <div class="section-wrap">
+    <div class="section-header on-dark"><h2>Notable Coverage &amp; Support</h2></div>
+    <div class="coverage-grid">
+
+      <div class="coverage-card">
+        <div class="coverage-outlet">The Nation</div>
+        <h3>The Persecution of John Kiriakou</h3>
+        <p>In-depth reporting on how the Obama administration selectively prosecuted the man who exposed torture while protecting those who committed it.</p>
+        <a href="https://www.thenation.com/search/#stq=kiriakou" target="_blank" rel="noopener">Read at The Nation ↗</a>
+      </div>
+
+      <div class="coverage-card">
+        <div class="coverage-outlet">The Guardian</div>
+        <h3>John Kiriakou: "I Was Betrayed by the CIA"</h3>
+        <p>Kiriakou speaks to The Guardian about his prosecution, his time in prison, and what he believes motivated the government's relentless pursuit of him.</p>
+        <a href="https://www.theguardian.com/search?q=john+kiriakou" target="_blank" rel="noopener">Read at The Guardian ↗</a>
+      </div>
+
+      <div class="coverage-card">
+        <div class="coverage-outlet">Salon</div>
+        <h3>The Only Person Jailed for CIA Torture Was the Man Who Reported It</h3>
+        <p>Widely shared piece on the fundamental injustice of Kiriakou's prosecution — the torturer went free, the truth-teller went to prison.</p>
+        <a href="https://www.salon.com/topic/john_kiriakou/" target="_blank" rel="noopener">Read at Salon ↗</a>
+      </div>
+
+      <div class="coverage-card">
+        <div class="coverage-outlet">ACLU</div>
+        <h3>ACLU Statement on Kiriakou Prosecution</h3>
+        <p>The American Civil Liberties Union condemned the Kiriakou prosecution as an abuse of the Espionage Act and a threat to press freedom and government accountability.</p>
+        <a href="https://www.aclu.org/search?query=kiriakou" target="_blank" rel="noopener">Read at ACLU.org ↗</a>
+      </div>
+
+      <div class="coverage-card">
+        <div class="coverage-outlet">Reporters Without Borders</div>
+        <h3>RSF Condemns Kiriakou Prosecution</h3>
+        <p>Reporters Without Borders classified Kiriakou as a prisoner of conscience and called for his release, citing serious concerns about press freedom in the United States.</p>
+        <a href="https://rsf.org/en/search?query=kiriakou" target="_blank" rel="noopener">Read at RSF.org ↗</a>
+      </div>
+
+      <div class="coverage-card">
+        <div class="coverage-outlet">Consortium News</div>
+        <h3>Kiriakou: The Conscience of the CIA</h3>
+        <p>Consortium News has been one of the most consistent supporters of Kiriakou, publishing his columns and covering his case since his arrest.</p>
+        <a href="https://consortiumnews.com/?s=kiriakou" target="_blank" rel="noopener">Read at Consortium News ↗</a>
+      </div>
+
+      <div class="coverage-card">
+        <div class="coverage-outlet">Reader Supported News</div>
+        <h3>Why John Kiriakou Deserves a Pardon</h3>
+        <p>Opinion pieces and advocacy coverage calling on the president to pardon Kiriakou as a matter of basic justice and accountability.</p>
+        <a href="https://readersupportednews.org/opinion2/277-75/search?searchword=kiriakou" target="_blank" rel="noopener">Read at RSN ↗</a>
+      </div>
+
+      <div class="coverage-card">
+        <div class="coverage-outlet">The Intercept</div>
+        <h3>The War on Whistleblowers</h3>
+        <p>The Intercept has extensively documented the Obama and subsequent administrations' use of the Espionage Act against government truth-tellers, including Kiriakou.</p>
+        <a href="https://theintercept.com/search?q=kiriakou" target="_blank" rel="noopener">Read at The Intercept ↗</a>
+      </div>
+
+      <div class="coverage-card">
+        <div class="coverage-outlet">Truthdig / ScheerPost</div>
+        <h3>John Kiriakou and the Price of Truth</h3>
+        <p>Robert Scheer and ScheerPost have championed Kiriakou's case as emblematic of America's broken relationship with accountability and the truth.</p>
+        <a href="https://scheerpost.com/?s=kiriakou" target="_blank" rel="noopener">Read at ScheerPost ↗</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- NEWS -->
 <section id="news">
   <div class="section-wrap">
     <div class="section-header"><h2>Latest Coverage</h2></div>
