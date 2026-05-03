@@ -87,7 +87,6 @@
       color: var(--ink);
       font-style: normal;
       margin-bottom: 0.1rem;
-      /* Stroke effect for extra boldness */
       -webkit-text-stroke: 1.5px var(--ink);
     }
 
@@ -301,7 +300,6 @@
     #coverage { background: var(--paper-dark); }
     .section-header.on-dark h2 { background: var(--paper-dark); }
 
-    /* TIMELINE */
     .timeline-grid { display: grid; grid-template-columns: 90px 1fr; }
 
     .tl-year {
@@ -352,7 +350,6 @@
     .tl-content h3 { font-family: 'Libre Baskerville', serif; font-weight: 700; font-size: 1rem; margin-bottom: 0.4rem; }
     .tl-content p { font-size: 0.9rem; color: var(--gray); line-height: 1.6; }
 
-    /* PETITION */
     #petition { background: var(--ink); }
     #petition .section-wrap { border-bottom-color: rgba(242,234,216,0.15); }
     #petition .section-header h2 { background: var(--ink); color: var(--paper); }
@@ -426,7 +423,6 @@
     .form-message.success { background: rgba(100,180,100,0.12); color: #8dcc8d; border-left: 3px solid #8dcc8d; }
     .form-message.error { background: rgba(180,60,60,0.12); color: #e08080; border-left: 3px solid #e08080; }
 
-    /* REP */
     .rep-intro-text { font-style: italic; color: var(--gray); max-width: 580px; margin: 0 auto 2rem; text-align: center; }
     .rep-form { display: flex; max-width: 460px; margin: 0 auto 2rem; }
 
@@ -464,30 +460,9 @@
     .rep-card .rep-name { font-family: 'Libre Baskerville', serif; font-weight: 700; font-size: 1rem; margin-bottom: 0.2rem; }
     .rep-card .rep-title { font-family: 'Oswald', sans-serif; font-size: 0.7rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray); margin-bottom: 0.5rem; }
     .rep-card .rep-note { font-size: 0.78rem; font-style: italic; color: var(--gray); margin-bottom: 1rem; line-height: 1.4; }
-    .rep-card a {
-      font-family: 'Oswald', sans-serif;
-      font-size: 0.72rem;
-      font-weight: 600;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      background: var(--red);
-      color: var(--paper);
-      padding: 0.4rem 1rem;
-      text-decoration: none;
-      display: inline-block;
-      transition: background 0.2s;
-      margin-right: 0.5rem;
-      margin-bottom: 0.5rem;
-    }
+    .rep-card a { font-family: 'Oswald', sans-serif; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; background: var(--red); color: var(--paper); padding: 0.4rem 1rem; text-decoration: none; display: inline-block; transition: background 0.2s; margin-right: 0.5rem; margin-bottom: 0.5rem; }
     .rep-card a:hover { background: #5a0000; }
-    .rep-card a.secondary {
-      background: transparent;
-      color: var(--ink);
-      border: 1px solid var(--ink);
-    }
-    .rep-card a.secondary:hover { background: var(--ink); color: var(--paper); }
 
-    /* BOOKS */
     .books-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); border-top: 1px solid rgba(26,16,8,0.15); border-left: 1px solid rgba(26,16,8,0.15); }
     .book-card { padding: 1.5rem; border-right: 1px solid rgba(26,16,8,0.15); border-bottom: 1px solid rgba(26,16,8,0.15); }
     .book-year { font-family: 'Oswald', sans-serif; font-size: 0.62rem; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--red); margin-bottom: 0.5rem; border-top: 2px solid var(--red); padding-top: 0.4rem; display: inline-block; }
@@ -496,7 +471,6 @@
     .book-card a { font-family: 'Oswald', sans-serif; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--red); text-decoration: none; }
     .book-card a:hover { text-decoration: underline; }
 
-    /* MEDIA */
     .media-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.5rem; }
     .media-card { background: var(--paper); border-top: 3px solid var(--ink); padding: 1.5rem; }
     .media-type { font-family: 'Oswald', sans-serif; font-size: 0.62rem; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gray-light); margin-bottom: 0.5rem; }
@@ -505,7 +479,6 @@
     .media-card a { font-family: 'Oswald', sans-serif; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--red); text-decoration: none; }
     .media-card a:hover { text-decoration: underline; }
 
-    /* APPEARANCES */
     .appearances-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem; }
     .appearance-card { border: 1px solid rgba(26,16,8,0.12); padding: 1.5rem; background: var(--paper); transition: border-color 0.2s; }
     .appearance-card:hover { border-color: var(--red); }
@@ -515,7 +488,6 @@
     .appearance-card a { font-family: 'Oswald', sans-serif; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--red); text-decoration: none; }
     .appearance-card a:hover { text-decoration: underline; }
 
-    /* COVERAGE */
     .coverage-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; }
     .coverage-card { background: var(--paper); border-top: 3px solid var(--ink); padding: 1.5rem; }
     .coverage-outlet { font-family: 'Oswald', sans-serif; font-size: 0.62rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gray-light); margin-bottom: 0.4rem; }
@@ -524,7 +496,6 @@
     .coverage-card a { font-family: 'Oswald', sans-serif; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--red); text-decoration: none; }
     .coverage-card a:hover { text-decoration: underline; }
 
-    /* NEWS */
     .news-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 2rem; }
     .news-card { border-top: 1px solid var(--ink); padding-top: 1rem; }
     .news-source { font-family: 'Oswald', sans-serif; font-size: 0.62rem; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--red); margin-bottom: 0.4rem; }
@@ -613,7 +584,6 @@
         <div class="stat-item"><div class="stat-num">#5</div><div class="stat-txt">NYT Bestseller</div></div>
       </div>
     </div>
-
     <div class="sidebar-block">
       <div class="sidebar-label">Follow John Kiriakou</div>
       <div class="follow-links">
@@ -624,7 +594,6 @@
         <a href="https://johnkiriakou.com" target="_blank" rel="noopener" class="follow-link">JohnKiriakou.com</a>
       </div>
     </div>
-
     <div class="sidebar-block">
       <div class="sidebar-label">Going Viral in 2026</div>
       <p style="font-size:0.88rem;color:var(--gray);line-height:1.6;font-style:italic;">Clips from Kiriakou's interviews are reaching millions on TikTok, Instagram, and X. A new generation is discovering what happened — and demanding answers.</p>
@@ -632,80 +601,68 @@
   </div>
 </div>
 
-<!-- TIMELINE -->
 <section id="timeline">
   <div class="section-wrap">
     <div class="section-header"><h2>A Life in Service — and Sacrifice</h2></div>
     <div class="timeline-grid">
-
       <div class="tl-year">1988</div>
       <div class="tl-content">
         <span class="tl-tag service">Service</span>
         <h3>Recruited to the CIA</h3>
         <p>Recruited out of George Washington University by professor and former CIA psychiatrist Jerrold Post. Begins an 18-year career in intelligence as a Middle East analyst.</p>
       </div>
-
       <div class="tl-year">1998–2000</div>
       <div class="tl-content">
         <span class="tl-tag service">Service</span>
         <h3>Counterterrorism Operations, Athens</h3>
         <p>Assigned to the CIA station in Athens targeting left-wing terrorist groups. Recruits foreign agents for the United States. Nearly assassinated in the line of duty.</p>
       </div>
-
       <div class="tl-year">2002</div>
       <div class="tl-content">
         <span class="tl-tag milestone">Milestone</span>
         <h3>Leads the Capture of Abu Zubaydah</h3>
         <p>As Chief of Counterterrorist Operations in Pakistan, leads the raid capturing Abu Zubaydah — then believed to be al-Qaeda's third-ranking official.</p>
       </div>
-
       <div class="tl-year">2004</div>
       <div class="tl-content">
         <span class="tl-tag service">Service</span>
         <h3>Departs the CIA</h3>
         <p>Leaves the CIA after nearly two decades. Later serves as senior investigator for the Senate Foreign Relations Committee under Senator John Kerry.</p>
       </div>
-
       <div class="tl-year">2007</div>
       <div class="tl-content">
         <span class="tl-tag milestone">Turning Point</span>
         <h3>Tells the Truth on ABC News</h3>
         <p>In a landmark interview with Brian Ross, becomes the first U.S. government official to publicly confirm the CIA used waterboarding — and calls it torture. The interview changes the national conversation forever.</p>
       </div>
-
       <div class="tl-year injustice">2012</div>
       <div class="tl-content">
         <span class="tl-tag injustice">Injustice</span>
         <h3>Charged Under the Espionage Act</h3>
         <p>The Obama Justice Department charges Kiriakou — making him the first CIA officer ever prosecuted for talking to the media. Those who designed the torture program face no charges.</p>
       </div>
-
       <div class="tl-year injustice">2013</div>
       <div class="tl-content">
         <span class="tl-tag injustice">Injustice</span>
         <h3>Begins 30-Month Prison Sentence</h3>
         <p>Sentenced to 30 months at Loretto, Pennsylvania. Serves 23 months. Writes the widely-read blog series "Letters From Loretto." No torturer is ever charged.</p>
       </div>
-
       <div class="tl-year">2015</div>
       <div class="tl-content">
         <span class="tl-tag milestone">Release</span>
         <h3>Released — and Immediately Back to Work</h3>
         <p>Released from prison. Immediately resumes writing and advocacy. Becomes a columnist for Consortium News. Launches the Deep Focus podcast.</p>
       </div>
-
       <div class="tl-year now">2026</div>
       <div class="tl-content">
         <span class="tl-tag now">Now</span>
         <h3>Going Viral — A New Generation Learns the Truth</h3>
         <p>Clips of Kiriakou's interviews go viral across TikTok, Instagram, and X — millions of views. New book with Tucker Carlson drops June 2026. The pardon campaign continues.</p>
       </div>
-
     </div>
   </div>
 </section>
 
-<!-- PETITION -->
 <section id="petition">
   <div class="section-wrap">
     <div class="section-header"><h2>Sign the Petition</h2></div>
@@ -751,11 +708,10 @@
   </div>
 </section>
 
-<!-- CONTACT YOUR REP -->
 <section id="rep">
   <div class="section-wrap">
     <div class="section-header on-dark"><h2>Contact Your Representative</h2></div>
-    <p class="rep-intro-text">Enter your ZIP code to find direct contact links for your U.S. House member and both senators — with a pre-written message urging support for a Kiriakou pardon.</p>
+    <p class="rep-intro-text">Enter your ZIP code to find direct contact links for your U.S. House member, both senators, and the White House — with a pre-written message urging support for a Kiriakou pardon.</p>
     <div class="rep-form">
       <input type="text" id="repZip" placeholder="Enter your ZIP code" maxlength="5" />
       <button class="btn-stamp" onclick="lookupRep()">Find My Reps →</button>
@@ -767,7 +723,6 @@
   </div>
 </section>
 
-<!-- BOOKS -->
 <section id="books">
   <div class="section-wrap">
     <div class="section-header"><h2>Books by John Kiriakou</h2></div>
@@ -806,7 +761,6 @@
   </div>
 </section>
 
-<!-- MEDIA -->
 <section id="media">
   <div class="section-wrap">
     <div class="section-header on-dark"><h2>His Own Platforms</h2></div>
@@ -851,7 +805,6 @@
   </div>
 </section>
 
-<!-- APPEARANCES -->
 <section id="appearances">
   <div class="section-wrap">
     <div class="section-header"><h2>Notable Appearances &amp; Interviews</h2></div>
@@ -914,7 +867,6 @@
   </div>
 </section>
 
-<!-- COVERAGE -->
 <section id="coverage">
   <div class="section-wrap">
     <div class="section-header on-dark"><h2>Notable Coverage &amp; Support</h2></div>
@@ -977,7 +929,6 @@
   </div>
 </section>
 
-<!-- NEWS -->
 <section id="news">
   <div class="section-wrap">
     <div class="section-header"><h2>Latest Coverage</h2></div>
@@ -1062,13 +1013,66 @@
     } catch {}
   }
 
-  // CONTACT YOUR REP — direct link builder, no API needed
   function lookupRep() {
     const zip = document.getElementById('repZip').value.trim();
     if (zip.length !== 5 || isNaN(zip)) { alert('Please enter a valid 5-digit ZIP code.'); return; }
 
-    const subject = encodeURIComponent('Please Support a Presidential Pardon for John Kiriakou');
-    const body = encodeURIComponent(`Dear Representative/Senator,\n\nI am writing to urge you to support a presidential pardon for John Kiriakou, the former CIA officer prosecuted under the Espionage Act for confirming the CIA's use of waterboarding.\n\nMr. Kiriakou served his country for nearly two decades. When he told the truth about illegal government conduct, he was prosecuted. The CIA officers who designed and carried out the torture program were never charged.\n\nI urge you to publicly call for a pardon for John Kiriakou.\n\nThank you.`);
+    const z = parseInt(zip);
+    let state = '', stateName = '';
+    if (z>=35004&&z<=36925){state='AL';stateName='Alabama';}
+    else if (z>=99501&&z<=99950){state='AK';stateName='Alaska';}
+    else if (z>=85001&&z<=86556){state='AZ';stateName='Arizona';}
+    else if (z>=71601&&z<=72959){state='AR';stateName='Arkansas';}
+    else if (z>=90001&&z<=96162){state='CA';stateName='California';}
+    else if (z>=80001&&z<=81658){state='CO';stateName='Colorado';}
+    else if (z>=6001&&z<=6928){state='CT';stateName='Connecticut';}
+    else if (z>=19701&&z<=19980){state='DE';stateName='Delaware';}
+    else if (z>=32004&&z<=34997){state='FL';stateName='Florida';}
+    else if (z>=30001&&z<=31999){state='GA';stateName='Georgia';}
+    else if (z>=96701&&z<=96898){state='HI';stateName='Hawaii';}
+    else if (z>=83201&&z<=83876){state='ID';stateName='Idaho';}
+    else if (z>=60001&&z<=62999){state='IL';stateName='Illinois';}
+    else if (z>=46001&&z<=47997){state='IN';stateName='Indiana';}
+    else if (z>=50001&&z<=52809){state='IA';stateName='Iowa';}
+    else if (z>=66002&&z<=67954){state='KS';stateName='Kansas';}
+    else if (z>=40003&&z<=42788){state='KY';stateName='Kentucky';}
+    else if (z>=70001&&z<=71497){state='LA';stateName='Louisiana';}
+    else if (z>=3901&&z<=4992){state='ME';stateName='Maine';}
+    else if (z>=20601&&z<=21930){state='MD';stateName='Maryland';}
+    else if (z>=1001&&z<=2791){state='MA';stateName='Massachusetts';}
+    else if (z>=48001&&z<=49971){state='MI';stateName='Michigan';}
+    else if (z>=55001&&z<=56763){state='MN';stateName='Minnesota';}
+    else if (z>=38601&&z<=39776){state='MS';stateName='Mississippi';}
+    else if (z>=63001&&z<=65899){state='MO';stateName='Missouri';}
+    else if (z>=59001&&z<=59937){state='MT';stateName='Montana';}
+    else if (z>=68001&&z<=69367){state='NE';stateName='Nebraska';}
+    else if (z>=88901&&z<=89883){state='NV';stateName='Nevada';}
+    else if (z>=3031&&z<=3897){state='NH';stateName='New Hampshire';}
+    else if (z>=7001&&z<=8989){state='NJ';stateName='New Jersey';}
+    else if (z>=87001&&z<=88441){state='NM';stateName='New Mexico';}
+    else if (z>=10001&&z<=14975){state='NY';stateName='New York';}
+    else if (z>=27006&&z<=28909){state='NC';stateName='North Carolina';}
+    else if (z>=58001&&z<=58856){state='ND';stateName='North Dakota';}
+    else if (z>=43001&&z<=45999){state='OH';stateName='Ohio';}
+    else if (z>=73001&&z<=74966){state='OK';stateName='Oklahoma';}
+    else if (z>=97001&&z<=97920){state='OR';stateName='Oregon';}
+    else if (z>=15001&&z<=19640){state='PA';stateName='Pennsylvania';}
+    else if (z>=2801&&z<=2940){state='RI';stateName='Rhode Island';}
+    else if (z>=29001&&z<=29948){state='SC';stateName='South Carolina';}
+    else if (z>=57001&&z<=57799){state='SD';stateName='South Dakota';}
+    else if (z>=37010&&z<=38589){state='TN';stateName='Tennessee';}
+    else if ((z>=75001&&z<=79999)||(z>=88510&&z<=88589)){state='TX';stateName='Texas';}
+    else if (z>=84001&&z<=84784){state='UT';stateName='Utah';}
+    else if (z>=5001&&z<=5907){state='VT';stateName='Vermont';}
+    else if (z>=20101&&z<=24658){state='VA';stateName='Virginia';}
+    else if (z>=98001&&z<=99403){state='WA';stateName='Washington';}
+    else if (z>=24701&&z<=26886){state='WV';stateName='West Virginia';}
+    else if (z>=53001&&z<=54990){state='WI';stateName='Wisconsin';}
+    else if (z>=82001&&z<=83128){state='WY';stateName='Wyoming';}
+
+    const senateUrl = state
+      ? `https://www.senate.gov/senators/senators-contact.htm?State=${state}`
+      : 'https://www.senate.gov/senators/senators-contact.htm';
 
     const resultsDiv = document.getElementById('rep-results');
     const cardsDiv = document.getElementById('repCards');
@@ -1078,14 +1082,14 @@
       <div class="rep-card">
         <div class="rep-name">Your U.S. House Representative</div>
         <div class="rep-title">U.S. House of Representatives</div>
-        <div class="rep-note">Click below to find your rep by ZIP code ${zip} and contact them directly on the official House website.</div>
+        <div class="rep-note">Your ZIP code is pre-filled — click to go directly to your representative's contact page.</div>
         <a href="https://www.house.gov/htbin/findrep?ZIP=${zip}" target="_blank" rel="noopener">Find My Rep → House.gov</a>
       </div>
       <div class="rep-card">
-        <div class="rep-name">Your U.S. Senators</div>
-        <div class="rep-title">U.S. Senate — Your State</div>
-        <div class="rep-note">Click below to find and contact both of your U.S. Senators on the official Senate website.</div>
-        <a href="https://www.senate.gov/senators/senators-contact.htm?ZIP=${zip}" target="_blank" rel="noopener">Find My Senators → Senate.gov</a>
+        <div class="rep-name">${stateName ? stateName + ' Senators' : 'Your U.S. Senators'}</div>
+        <div class="rep-title">U.S. Senate${stateName ? ' — ' + stateName : ''}</div>
+        <div class="rep-note">Contact both of your ${stateName || 'state\'s'} senators directly on the official Senate website.</div>
+        <a href="${senateUrl}" target="_blank" rel="noopener">Contact My Senators → Senate.gov</a>
       </div>
       <div class="rep-card">
         <div class="rep-name">The White House</div>
