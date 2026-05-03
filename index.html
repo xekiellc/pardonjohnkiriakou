@@ -482,7 +482,9 @@
     .appearances-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem; }
     .appearance-card { border: 1px solid rgba(26,16,8,0.12); padding: 1.5rem; background: var(--paper); transition: border-color 0.2s; }
     .appearance-card:hover { border-color: var(--red); }
+    .appearance-card.featured { border-color: var(--red); border-width: 2px; }
     .app-platform { font-family: 'Oswald', sans-serif; font-size: 0.62rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--red); margin-bottom: 0.4rem; }
+    .app-badge { display: inline-block; background: var(--ink); color: var(--paper); font-family: 'Oswald', sans-serif; font-size: 0.58rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; padding: 0.15rem 0.5rem; margin-bottom: 0.5rem; margin-left: 0.5rem; vertical-align: middle; }
     .appearance-card h3 { font-family: 'Libre Baskerville', serif; font-weight: 700; font-size: 0.95rem; line-height: 1.4; margin-bottom: 0.4rem; }
     .appearance-card p { font-size: 0.82rem; color: var(--gray); line-height: 1.5; margin-bottom: 1rem; }
     .appearance-card a { font-family: 'Oswald', sans-serif; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--red); text-decoration: none; }
@@ -601,6 +603,7 @@
   </div>
 </div>
 
+<!-- TIMELINE -->
 <section id="timeline">
   <div class="section-wrap">
     <div class="section-header"><h2>A Life in Service — and Sacrifice</h2></div>
@@ -663,6 +666,7 @@
   </div>
 </section>
 
+<!-- PETITION -->
 <section id="petition">
   <div class="section-wrap">
     <div class="section-header"><h2>Sign the Petition</h2></div>
@@ -708,6 +712,7 @@
   </div>
 </section>
 
+<!-- CONTACT YOUR REP -->
 <section id="rep">
   <div class="section-wrap">
     <div class="section-header on-dark"><h2>Contact Your Representative</h2></div>
@@ -723,6 +728,7 @@
   </div>
 </section>
 
+<!-- BOOKS -->
 <section id="books">
   <div class="section-wrap">
     <div class="section-header"><h2>Books by John Kiriakou</h2></div>
@@ -761,6 +767,7 @@
   </div>
 </section>
 
+<!-- MEDIA -->
 <section id="media">
   <div class="section-wrap">
     <div class="section-header on-dark"><h2>His Own Platforms</h2></div>
@@ -774,8 +781,14 @@
       <div class="media-card">
         <div class="media-type">Daily Podcast</div>
         <h3>Deprogrammed with Ted Rall</h3>
-        <p>Daily weekday podcast co-hosted with political cartoonist Ted Rall. Live 9AM EST.</p>
+        <p>Daily weekday podcast co-hosted with political cartoonist Ted Rall. Live 9AM EST every weekday.</p>
         <a href="https://player.fm/podcasts/John-Kiriakou" target="_blank" rel="noopener">Listen Now ↗</a>
+      </div>
+      <div class="media-card">
+        <div class="media-type">Apple Podcasts — His Own Show</div>
+        <h3>John Kiriakou's Dead Drop</h3>
+        <p>A deep dive into what makes a spy tick — his origin story, covert operations, and the real cost of conscience.</p>
+        <a href="https://podcasts.apple.com/us/podcast/john-kiriakous-dead-drop/id1844905790" target="_blank" rel="noopener">Listen on Apple Podcasts ↗</a>
       </div>
       <div class="media-card">
         <div class="media-type">Writing — Consortium News</div>
@@ -792,81 +805,94 @@
       <div class="media-card">
         <div class="media-type">Viral Clips</div>
         <h3>TikTok &amp; Shorts — Millions of Views</h3>
-        <p>Fan-clipped highlights reaching millions across TikTok, Instagram Reels, and YouTube Shorts.</p>
+        <p>Fan-clipped highlights reaching millions across TikTok, Instagram Reels, and YouTube Shorts in 2026.</p>
         <a href="https://www.tiktok.com/@john_kiriakou_clips" target="_blank" rel="noopener">Watch on TikTok ↗</a>
-      </div>
-      <div class="media-card">
-        <div class="media-type">Personal Website</div>
-        <h3>JohnKiriakou.com</h3>
-        <p>His official website with latest writing, speaking schedule, and direct contact information.</p>
-        <a href="https://johnkiriakou.com" target="_blank" rel="noopener">Visit JohnKiriakou.com ↗</a>
       </div>
     </div>
   </div>
 </section>
 
+<!-- APPEARANCES -->
 <section id="appearances">
   <div class="section-wrap">
     <div class="section-header"><h2>Notable Appearances &amp; Interviews</h2></div>
     <div class="appearances-grid">
-      <div class="appearance-card">
-        <div class="app-platform">YouTube / Interview</div>
-        <h3>Tucker Carlson Network — Full Interview</h3>
-        <p>Wide-ranging conversation covering his CIA career, the torture program, his prosecution, and what the government is still hiding.</p>
-        <a href="https://www.youtube.com/results?search_query=john+kiriakou+tucker+carlson" target="_blank" rel="noopener">Watch on YouTube ↗</a>
+
+      <div class="appearance-card featured">
+        <div class="app-platform">The Joe Rogan Experience <span class="app-badge">Must Watch</span></div>
+        <h3>JRE #2392 — October 10, 2025 — 2hr 36min</h3>
+        <p>The breakout appearance that introduced Kiriakou to millions of new listeners. CIA career, the torture program, his prosecution, prison, and the deep state. One of JRE's most-discussed episodes of 2025.</p>
+        <a href="https://www.youtube.com/watch?v=TZqADzuu73g" target="_blank" rel="noopener">Watch on YouTube ↗</a>
       </div>
+
       <div class="appearance-card">
-        <div class="app-platform">Podcast / The Grayzone</div>
-        <h3>The Grayzone with Aaron Maté</h3>
-        <p>CIA torture, the Espionage Act as political persecution, and the treatment of whistleblowers under successive administrations.</p>
-        <a href="https://www.youtube.com/results?search_query=john+kiriakou+grayzone" target="_blank" rel="noopener">Watch ↗</a>
-      </div>
-      <div class="appearance-card">
-        <div class="app-platform">Podcast / Useful Idiots</div>
-        <h3>Useful Idiots — Matt Taibbi &amp; Katie Halper</h3>
-        <p>Government secrecy, the war on whistleblowers, and how the security state protects itself at all costs.</p>
-        <a href="https://www.youtube.com/results?search_query=john+kiriakou+useful+idiots" target="_blank" rel="noopener">Watch ↗</a>
-      </div>
-      <div class="appearance-card">
-        <div class="app-platform">Podcast / Due Dissidence</div>
-        <h3>Due Dissidence Podcast</h3>
-        <p>Civil liberties in America, expansion of the surveillance state, and why whistleblower protections are essential to democracy.</p>
-        <a href="https://www.youtube.com/results?search_query=john+kiriakou+due+dissidence" target="_blank" rel="noopener">Watch ↗</a>
-      </div>
-      <div class="appearance-card">
-        <div class="app-platform">Podcast / Scheer Intelligence</div>
-        <h3>Scheer Intelligence with Robert Scheer</h3>
-        <p>CIA torture, the moral collapse of American intelligence institutions, and the price paid for speaking truth.</p>
-        <a href="https://www.youtube.com/results?search_query=john+kiriakou+scheer+intelligence" target="_blank" rel="noopener">Watch ↗</a>
-      </div>
-      <div class="appearance-card">
-        <div class="app-platform">Podcast / Katie Halper Show</div>
-        <h3>The Katie Halper Show</h3>
-        <p>The weaponization of the Espionage Act against journalists and whistleblowers and what it means for press freedom.</p>
-        <a href="https://www.youtube.com/results?search_query=john+kiriakou+katie+halper" target="_blank" rel="noopener">Watch ↗</a>
-      </div>
-      <div class="appearance-card">
-        <div class="app-platform">ABC News — 2007</div>
+        <div class="app-platform">ABC News — December 2007</div>
         <h3>The Interview That Changed Everything</h3>
-        <p>The landmark 2007 ABC News interview with Brian Ross — the first U.S. official to publicly confirm CIA waterboarding.</p>
-        <a href="https://www.youtube.com/results?search_query=kiriakou+ABC+news+waterboarding+2007" target="_blank" rel="noopener">Watch ↗</a>
+        <p>The landmark Brian Ross interview in which Kiriakou became the first U.S. official to publicly confirm CIA waterboarding. The interview that started it all — and cost him everything.</p>
+        <a href="https://www.youtube.com/results?search_query=kiriakou+ABC+news+Brian+Ross+waterboarding+2007" target="_blank" rel="noopener">Watch on YouTube ↗</a>
       </div>
+
       <div class="appearance-card">
-        <div class="app-platform">Podcast / Unauthorized Disclosure</div>
-        <h3>Unauthorized Disclosure — Kevin Gosztola</h3>
-        <p>The Espionage Act as a political weapon against those who expose illegal state conduct.</p>
-        <a href="https://www.youtube.com/results?search_query=john+kiriakou+unauthorized+disclosure" target="_blank" rel="noopener">Watch ↗</a>
+        <div class="app-platform">Dalton Fischer Podcast — Spotify</div>
+        <h3>CIA Spy Recounts Covert Operations & Assassination Attempts</h3>
+        <p>Deep two-part interview covering his CIA recruitment, training at The Farm, covert operations, assassination attempts, the Abu Zubaydah capture, and his whistleblowing.</p>
+        <a href="https://open.spotify.com/episode/5zQTElrgfHxldDRBpUDLJB" target="_blank" rel="noopener">Listen on Spotify ↗</a>
       </div>
+
       <div class="appearance-card">
-        <div class="app-platform">Podcast / Fault Lines</div>
-        <h3>Fault Lines — Radio Sputnik</h3>
-        <p>Regular contributor discussing intelligence community overreach and the persecution of government truth-tellers.</p>
-        <a href="https://www.youtube.com/results?search_query=john+kiriakou+fault+lines" target="_blank" rel="noopener">Watch ↗</a>
+        <div class="app-platform">Patrick Bet-David / Valuetainment</div>
+        <h3>CIA Torture, the Deep State & Obama's Espionage Act</h3>
+        <p>Kiriakou and Bet-David break down the federal weaponization of the Espionage Act, his bombshell prediction of the U.S. strike on Iran, and the real workings of the intelligence community.</p>
+        <a href="https://www.youtube.com/results?search_query=john+kiriakou+patrick+bet+david+valuetainment" target="_blank" rel="noopener">Watch on YouTube ↗</a>
       </div>
+
+      <div class="appearance-card">
+        <div class="app-platform">Julian Dorey Podcast — Full Playlist</div>
+        <h3>All John Kiriakou Episodes</h3>
+        <p>Multiple appearances covering geopolitics, espionage, CIA operations, and the whistleblower experience. One of his most extensive interview series.</p>
+        <a href="https://www.youtube.com/playlist?list=PL-ICwfCgQ-Z1DPZs0YvPqdOTongALGXPt" target="_blank" rel="noopener">Watch Full Playlist ↗</a>
+      </div>
+
+      <div class="appearance-card">
+        <div class="app-platform">James O'Keefe — My Price Is My Life</div>
+        <h3>A Spy with a Conscience</h3>
+        <p>O'Keefe sits down with Kiriakou for a personal account of his 15 years inside the agency, his overseas deployments, and the moment he decided to blow the whistle.</p>
+        <a href="https://www.youtube.com/results?search_query=john+kiriakou+james+okeefe+my+price+is+my+life" target="_blank" rel="noopener">Watch on YouTube ↗</a>
+      </div>
+
+      <div class="appearance-card">
+        <div class="app-platform">Democracy Now! — Amy Goodman</div>
+        <h3>Multiple Appearances — Democracy Now!</h3>
+        <p>Kiriakou has appeared multiple times with Amy Goodman discussing the torture program, his prosecution, whistleblower protections, and U.S. foreign policy.</p>
+        <a href="https://www.democracynow.org/appearances/john_kiriakou" target="_blank" rel="noopener">Watch at Democracy Now ↗</a>
+      </div>
+
+      <div class="appearance-card">
+        <div class="app-platform">Scheer Intelligence — Robert Scheer</div>
+        <h3>Scheer Intelligence Podcast</h3>
+        <p>CIA torture, the moral collapse of American intelligence institutions, and the price paid for speaking truth to power.</p>
+        <a href="https://www.youtube.com/results?search_query=john+kiriakou+scheer+intelligence" target="_blank" rel="noopener">Watch on YouTube ↗</a>
+      </div>
+
+      <div class="appearance-card">
+        <div class="app-platform">The Grayzone</div>
+        <h3>The Grayzone with Aaron Maté</h3>
+        <p>The Espionage Act as political persecution, CIA torture, and the treatment of whistleblowers across multiple administrations.</p>
+        <a href="https://www.youtube.com/results?search_query=john+kiriakou+grayzone+aaron+mate" target="_blank" rel="noopener">Watch on YouTube ↗</a>
+      </div>
+
+      <div class="appearance-card">
+        <div class="app-platform">Podchaser — Full Appearance History</div>
+        <h3>Complete Podcast Appearance Archive</h3>
+        <p>A comprehensive archive of every podcast appearance Kiriakou has made — hosted episodes, guest interviews, and more. Updated regularly.</p>
+        <a href="https://www.podchaser.com/creators/john-kiriakou-107abIzgYz/appearances" target="_blank" rel="noopener">View Full Archive ↗</a>
+      </div>
+
     </div>
   </div>
 </section>
 
+<!-- COVERAGE -->
 <section id="coverage">
   <div class="section-wrap">
     <div class="section-header on-dark"><h2>Notable Coverage &amp; Support</h2></div>
@@ -929,6 +955,7 @@
   </div>
 </section>
 
+<!-- NEWS -->
 <section id="news">
   <div class="section-wrap">
     <div class="section-header"><h2>Latest Coverage</h2></div>
@@ -1070,10 +1097,6 @@
     else if (z>=53001&&z<=54990){state='WI';stateName='Wisconsin';}
     else if (z>=82001&&z<=83128){state='WY';stateName='Wyoming';}
 
-    const senateUrl = state
-      ? `https://www.senate.gov/senators/senators-contact.htm?State=${state}`
-      : 'https://www.senate.gov/senators/senators-contact.htm';
-
     const resultsDiv = document.getElementById('rep-results');
     const cardsDiv = document.getElementById('repCards');
     resultsDiv.style.display = 'block';
@@ -1088,8 +1111,8 @@
       <div class="rep-card">
         <div class="rep-name">${stateName ? stateName + ' Senators' : 'Your U.S. Senators'}</div>
         <div class="rep-title">U.S. Senate${stateName ? ' — ' + stateName : ''}</div>
-        <div class="rep-note">Contact both of your ${stateName || 'state\'s'} senators directly on the official Senate website.</div>
-        <a href="${senateUrl}" target="_blank" rel="noopener">Contact My Senators → Senate.gov</a>
+        <div class="rep-note">On the Senate page, select <strong>${stateName || 'your state'}</strong> from the "Choose a state" dropdown to find and contact both of your senators.</div>
+        <a href="https://www.senate.gov/senators/senators-contact.htm" target="_blank" rel="noopener">Contact My Senators → Senate.gov</a>
       </div>
       <div class="rep-card">
         <div class="rep-name">The White House</div>
