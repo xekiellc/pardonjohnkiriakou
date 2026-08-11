@@ -8,6 +8,14 @@
   <meta property="og:title" content="Pardon John Kiriakou" />
   <meta property="og:description" content="He told the truth about torture. They put him in prison. Sign the petition for a presidential pardon." />
   <meta property="og:url" content="https://pardonjohnkiriakou.com" />
+  <meta property="og:image" content="https://pardonjohnkiriakou.com/og-image-jk.png" />
+  <meta property="og:image:width" content="730" />
+  <meta property="og:image:height" content="584" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Pardon John Kiriakou" />
+  <meta name="twitter:description" content="He told the truth about torture. They put him in prison. Sign the petition for a presidential pardon." />
+  <meta name="twitter:image" content="https://pardonjohnkiriakou.com/og-image-jk.png" />
   <meta name="google-site-verification" content="pardonjohnkiriakou.com" />
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-7PTGY5FWSN"></script>
   <script>
@@ -96,6 +104,22 @@
       font-style: italic;
       color: var(--gray);
       margin-top: 0.8rem;
+    }
+
+    /* HERO IMAGE BANNER */
+    .hero-image-banner {
+      width: 100%;
+      max-height: 500px;
+      overflow: hidden;
+      display: block;
+    }
+
+    .hero-image-banner img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
     }
 
     nav {
@@ -525,6 +549,7 @@
       .rep-form { flex-direction: column; }
       .rep-form input { border-right: 1px solid var(--ink); border-bottom: none; }
       .masthead-top { flex-direction: column; gap: 0.3rem; text-align: center; }
+      .hero-image-banner { max-height: 280px; }
     }
   </style>
 </head>
@@ -544,18 +569,24 @@
     </div>
     <p class="masthead-sub">"He told the truth. They put him in prison. The torturers went free."</p>
   </div>
-  <nav>
-    <a href="#case">The Case</a>
-    <a href="#timeline">Timeline</a>
-    <a href="#petition">Sign</a>
-    <a href="#rep">Contact Rep</a>
-    <a href="#books">Books</a>
-    <a href="#media">Media</a>
-    <a href="#appearances">Appearances</a>
-    <a href="#coverage">Coverage</a>
-    <a href="#news">News</a>
-  </nav>
 </header>
+
+<!-- HERO IMAGE BANNER -->
+<div class="hero-image-banner">
+  <img src="/og-image-jk.png" alt="John Kiriakou — Campaign for Justice" />
+</div>
+
+<nav>
+  <a href="#case">The Case</a>
+  <a href="#timeline">Timeline</a>
+  <a href="#petition">Sign</a>
+  <a href="#rep">Contact Rep</a>
+  <a href="#books">Books</a>
+  <a href="#media">Media</a>
+  <a href="#appearances">Appearances</a>
+  <a href="#coverage">Coverage</a>
+  <a href="#news">News</a>
+</nav>
 
 <div id="hero">
   <div id="case">
@@ -965,7 +996,6 @@
   const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJ5YWhmeGp3cXFjdmh0eHN1cm15Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzc3NTI0MjAsImV4cCI6MjA5MzMyODQyMH0.p_ASGhkIqtIt8kQOV-QL3t8oLdXMX_tGVzdpz9YoC2c';
   const COUNT_THRESHOLD = 100;
 
-  // Dynamic date
   document.getElementById('masthead-date').textContent = new Date().toLocaleDateString('en-US', {
     weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'
   });
@@ -1029,7 +1059,6 @@
   function lookupRep() {
     const zip = document.getElementById('repZip').value.trim();
     if (zip.length !== 5 || isNaN(zip)) { alert('Please enter a valid 5-digit ZIP code.'); return; }
-
     const z = parseInt(zip);
     let state = '', stateName = '';
     if (z>=35004&&z<=36925){state='AL';stateName='Alabama';}
@@ -1086,7 +1115,6 @@
     const resultsDiv = document.getElementById('rep-results');
     const cardsDiv = document.getElementById('repCards');
     resultsDiv.style.display = 'block';
-
     cardsDiv.innerHTML = `
       <div class="rep-card">
         <div class="rep-name">Your U.S. House Representative</div>
